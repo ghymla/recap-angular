@@ -1,4 +1,3 @@
-import { HtmlParser } from "@angular/compiler";
 import { Langage } from "./langage";
 
 export const LANGAGES: Langage [] = [
