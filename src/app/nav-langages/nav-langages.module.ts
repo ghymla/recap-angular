@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BarNavLangageComponent } from './bar-nav-langage/bar-nav-langage.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    BarNavLangageComponent
+  ],
   imports: [
     CommonModule
   ]
