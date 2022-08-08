@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BarNavLangageComponent } from './nav-langages/bar-nav-langage/bar-nav-langage.component';
 import { NavLangagesModule } from './nav-langages/nav-langages.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavLangagesModule } from './nav-langages/nav-langages.module';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     AppRoutingModule,
-    NavLangagesModule
+    NavLangagesModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]
