@@ -4,7 +4,7 @@ export class Langage {
   logo: string;
 
   constructor(
-    id: number = 0,
+    id: number,
     name: string = "entrer un nom ...",
     logo: string = "Url de votre logo",
   ){
