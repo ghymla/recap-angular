@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { LangageService } from "../langage.service";
 import { Langage } from "../langage";
 
+// import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faFilm, fas } from '@fortawesome/free-solid-svg-icons';
+// import { far } from '@fortawesome/free-regular-svg-icons';
+
+
 
 @Component({
   selector: 'app-bar-nav-langage',
@@ -10,10 +16,14 @@ import { Langage } from "../langage";
 })
 export class BarNavLangageComponent implements OnInit {
   langages: Langage[] | undefined;
+  // faHtml = faHtml5;
+
 
   constructor(
     private langageService: LangageService
-  ) { }
+  ) {
+    // library.add(fas, far);
+  }
 
   ngOnInit() {
    return this.langageService.getLangages().subscribe(

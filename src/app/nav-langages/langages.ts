@@ -9,7 +9,7 @@ export const LANGAGES: Langage [] = [
   {
     id : 2,
     name: "css",
-    logo: "l'url de css"
+    logo: "['fa', 'Html']"
   },
   {
     id: 3,
