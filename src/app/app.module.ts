@@ -17,10 +17,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FontAwesomeModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     AppRoutingModule,
-    NavLangagesModule,
-    FontAwesomeModule
+    NavLangagesModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]
