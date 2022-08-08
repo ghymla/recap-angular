@@ -4,9 +4,11 @@ export class Langage {
   logo: string;
 
   constructor(
+    id: number = 0,
     name: string = "entrer un nom ...",
     logo: string = "Url de votre logo",
   ){
+    this.id = id;
     this.name = name;
     this.logo = logo;
   }
