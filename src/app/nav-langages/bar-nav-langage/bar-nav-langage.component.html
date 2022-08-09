@@ -1,10 +1,13 @@
-
-<div *ngFor="let langage of langages">
-  {{ langage.name }}
-  <img
-  width="30"
-  alt="{{ langage.name }} Logo"
-  [src]="langage.logo"
-  >
-
+<div class="langage-cards mt-5">
+  <div  *ngFor="let langage of langages">
+    <div class="langage-card d-flex align-items-center ms-2 mt-2 border">
+      <img
+      class="me-2"
+      width="40"
+      alt="{{ langage.name }} Logo"
+      [src]="langage.logo"
+      >
+      <p class="m-auto">{{ langage.name }}</p>
+    </div>
+  </div>
 </div>
