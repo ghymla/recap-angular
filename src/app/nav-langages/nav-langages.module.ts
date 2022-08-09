@@ -20,6 +20,8 @@ import { far } from '@fortawesome/free-regular-svg-icons';
     FontAwesomeModule
   ]
 })
+
+// pour utiliser une icone font awesome dans la vue : --> <fa-icon [icon]="['fab', 'html5' ]"></fa-icon>
 export class NavLangagesModule {
   constructor(library: FaIconLibrary){
     library.addIconPacks(fas, far, fab);
