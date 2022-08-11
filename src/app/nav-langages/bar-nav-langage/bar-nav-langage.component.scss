@@ -1,9 +1,25 @@
 .langage-cards{
-  width: 175px;
+  width: 200px;
+  background-color: rgb(32 33 36);
+}
+
+.langage-card {
+  color: white;
 }
 
 .langage-card:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(44, 46, 50);
   cursor: pointer;
+}
+
+.ligne {
+  color: white;
+  margin-left: 70px;
+}
+
+.degrad {
+  height: 70px;
+  background: linear-gradient(#1976d2, rgb(32 33 36));
 }
