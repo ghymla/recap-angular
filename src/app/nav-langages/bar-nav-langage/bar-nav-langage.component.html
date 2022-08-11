@@ -1,7 +1,7 @@
 <div class="degrad"></div>
 <div class="langage-cards pt-3">
   <div  *ngFor="let langage of langages">
-    <div class="langage-card d-flex align-items-center ms-2 mt-2">
+    <div class="langage-card d-flex align-items-center ms-2 mt-2" (click)="goToLangage(langage)">
       <img
       class="me-2"
       width="40"

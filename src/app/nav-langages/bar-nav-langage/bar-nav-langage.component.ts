@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LangageService } from "../langage.service";
 import { Langage } from "../langage";
+import { Router } from "@angular/router";
 
 
 
@@ -13,7 +14,8 @@ export class BarNavLangageComponent implements OnInit {
   langages: Langage[] | undefined;
 
   constructor(
-    private langageService: LangageService
+    private langageService: LangageService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -22,4 +24,8 @@ export class BarNavLangageComponent implements OnInit {
    )
   }
 
+  goToLangage(lang: Langage){
+    // peut etre changer par navigateByUrl(url: string)
+    this.router.navigate([`${lang.name}`]);
+  }
 }
