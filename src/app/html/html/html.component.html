@@ -1,1 +1,128 @@
-<p>html works!</p>
+
+<div class="d-flex pos">
+  <div class="me-5">
+    <h2 class="text-center">HTML</h2>
+
+    <div id="baseHtml">
+      <h6> page de base en HTML</h6>
+
+      <pre>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+
+            &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt; Votre page Web &lt;/title&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+              &lt;!-- le corp de votre page --&gt;
+            &lt;/body&gt;
+
+          &lt;/html&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div id="sectionsHtml">
+      <h6>Différentes sections</h6>
+      <div class="ms-2">
+        <p>le Head</p>
+          <pre>
+            &lt;header&gt; La bannière de la page &lt;/header&gt;
+          </pre>
+        <p>le Body</p>
+          <pre>
+            &lt;main&gt; Le corp de votre page &lt;/main&gt;
+          </pre>
+        <p>le Footer</p>
+          <pre>
+            &lt;footer&gt; Le pied de page &lt;/footer&gt;
+          </pre>
+        <p>créer des listes</p>
+          <pre>
+            &lt;ul&gt;
+              &lt;li&gt; objet 1 d'une liste a points &lt;/li&gt;
+              &lt;li&gt; objet 2 d'une liste a points &lt;/li&gt;
+              &lt;li&gt; objet 3 d'une liste a points &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;ul&gt;
+              &lt;ol&gt; objet 1 d'une liste a chiffres &lt;/ol&gt;
+              &lt;ol&gt; objet 2 d'une liste a chiffres &lt;/ol&gt;
+              &lt;ol&gt; objet 3 d'une liste a chiffres &lt;/ol&gt;
+            &lt;/ul&gt;
+          </pre>
+      </div>
+    </div>
+
+    <div id="lienHtml">
+      <h6> Créé un lien interne </h6>
+      <div class="ms-2">
+          <pre>
+            &lt;p id="le lien"&gt; Le lien vous mènera ici !! &lt;/p&gt;
+            &lt;a href="#le lien"&gt; Le bouton du lien intérne &lt;/a&gt;
+          </pre>
+          <p>lien dans le dossier actuel ou antécédent de votre HTML</p>
+            <pre>
+              &lt;a href="./dossierOUfichier.ext"&gt; vous êtes dans votre dossier &lt;/a&gt;
+              &lt;a href="../dossierOUfichier.ext"&gt; vous êtes dans le dossier antécédent &lt;/a&gt;
+            </pre>
+          <p>lien externe</p>
+            <pre>
+              &lt;a href="lien du site externe"&gt; dirigez vous vers un autre site &lt;/a&gt;
+            </pre>
+          <p>ouvrir le lien dans un nouvel onglet</p>
+            <pre>
+              &lt;a href="le lien" target="_blank"&gt; (target="_blank") fait la dif! &lt;/a&gt;
+            </pre>
+      </div>
+    </div>
+
+    <div id="dropdownListHtml">
+      <h6>Dropdown list</h6>
+      <div class="ms-2">
+        <form>
+          <label for="test"> Liste de sélection </label>
+          <select id="test" name="quoi?">
+            <option value="manger"> Manger </option>
+            <option value="dormir"> Dormir </option>
+            <option value="joué"> Joué </option>
+          </select>
+        </form>
+
+        <pre class="mt-2">
+          &lt;form&gt;
+            &lt;label for="test"&gt; Liste de sélection &lt;/label&gt;
+            &lt;select id="test" name="quoi?"&gt;
+              &lt;option value="manger"&gt; Manger &lt;/option&gt;
+              &lt;option value="dormir"&gt; Dormir &lt;/option&gt;
+              &lt;option value="joué"&gt; Joué &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/form&gt;
+        </pre>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <h2 class="text-center"> exemples</h2>
+    <figure role="img" aria-labelledby="legende-vache">
+      <pre>
+      _____________
+    < Oh la vache !>
+      -------------
+             \   ^__^
+              \  (oo)\_______
+                 (__)\       )\/\
+                     ||----w |
+                     ||     ||
+      </pre>
+      <figcaption id="legende-vache">
+        Une vache qui dit « Oh la vache ! ». La vache est illustrée avec du texte à chasse fixe.
+      </figcaption>
+    </figure>
+  </div>
+
+</div>
