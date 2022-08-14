@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+html::-webkit-scrollbar{
+	width: 10px;
+	background-color: #162246;
+	border: 1px solid black;
+}
+
+body {
+  background-color: rgb(32, 33, 36) !important;
+}
 
 .navBarL {
   position: fixed;
@@ -10,6 +19,33 @@
 }
 
 .pos{
-  margin-top: 60px;
-  margin-left: 230px;
+  margin-top: 65px;
+  margin-left: 205px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.fenP {
+  border: 2px solid black;
+  color: grey;
+  background-color: black;
+  padding-left: 10px;
+  // overflow: scroll;
+}
+
+// .fenP:hover {
+//   overflow: scroll;
+// }
+
+// .fenP::-webkit-scrollbar{
+// 	width: 5px;
+// 	background-color: #202124;
+// 	border: 1px solid black;
+// }
+
+.fenE {
+  color: grey;
+  background-color: black;
+  margin-left: 5px;
+  flex-grow: 2;
 }

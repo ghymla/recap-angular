@@ -1,46 +1,48 @@
 
-<div class="d-flex pos">
-  <div class="me-5">
+<div class="d-flex pos ">
+  <div class="fenP">
+
     <h2 class="text-center">HTML</h2>
 
     <div id="baseHtml">
       <h6> page de base en HTML</h6>
+      <div>
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
 
-      <pre>
-        <code>
-          &lt;!DOCTYPE html&gt;
-          &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;title&gt; Votre page Web &lt;/title&gt;
+              &lt;/head&gt;
 
-            &lt;head&gt;
-              &lt;meta charset="utf-8"&gt;
-              &lt;title&gt; Votre page Web &lt;/title&gt;
-            &lt;/head&gt;
+              &lt;body&gt;
+                &lt;!-- le corp de votre page --&gt;
+              &lt;/body&gt;
 
-            &lt;body&gt;
-              &lt;!-- le corp de votre page --&gt;
-            &lt;/body&gt;
-
-          &lt;/html&gt;
-        </code>
-      </pre>
+            &lt;/html&gt;
+          </code>
+        </pre>
+      </div>
     </div>
 
     <div id="sectionsHtml">
       <h6>Différentes sections</h6>
-      <div class="ms-2">
-        <p>le Head</p>
+      <div>
+        <p class="ms-2" class="ms-2">le Head</p>
           <pre>
             &lt;header&gt; La bannière de la page &lt;/header&gt;
           </pre>
-        <p>le Body</p>
+        <p class="ms-2">le Body</p>
           <pre>
             &lt;main&gt; Le corp de votre page &lt;/main&gt;
           </pre>
-        <p>le Footer</p>
+        <p class="ms-2">le Footer</p>
           <pre>
             &lt;footer&gt; Le pied de page &lt;/footer&gt;
           </pre>
-        <p>créer des listes</p>
+        <p class="ms-2">créer des listes</p>
           <pre>
             &lt;ul&gt;
               &lt;li&gt; objet 1 d'une liste a points &lt;/li&gt;
@@ -59,30 +61,33 @@
 
     <div id="lienHtml">
       <h6> Créé un lien interne </h6>
-      <div class="ms-2">
+      <div>
+        <div>
           <pre>
             &lt;p id="le lien"&gt; Le lien vous mènera ici !! &lt;/p&gt;
             &lt;a href="#le lien"&gt; Le bouton du lien intérne &lt;/a&gt;
           </pre>
-          <p>lien dans le dossier actuel ou antécédent de votre HTML</p>
-            <pre>
-              &lt;a href="./dossierOUfichier.ext"&gt; vous êtes dans votre dossier &lt;/a&gt;
-              &lt;a href="../dossierOUfichier.ext"&gt; vous êtes dans le dossier antécédent &lt;/a&gt;
-            </pre>
-          <p>lien externe</p>
-            <pre>
-              &lt;a href="lien du site externe"&gt; dirigez vous vers un autre site &lt;/a&gt;
-            </pre>
-          <p>ouvrir le lien dans un nouvel onglet</p>
-            <pre>
-              &lt;a href="le lien" target="_blank"&gt; (target="_blank") fait la dif! &lt;/a&gt;
-            </pre>
+        </div>
+        <p class="ms-2">lien dans le dossier actuel ou antécédent de votre HTML</p>
+          <pre>
+            &lt;a href="./dossierOUfichier.ext"&gt; vous êtes dans votre dossier &lt;/a&gt;
+            &lt;a href="../dossierOUfichier.ext"&gt; vous êtes dans le dossier antécédent &lt;/a&gt;
+          </pre>
+        <p class="ms-2">lien externe</p>
+          <pre>
+            &lt;a href="lien du site externe"&gt; dirigez vous vers un autre site &lt;/a&gt;
+          </pre>
+        <p class="ms-2">ouvrir le lien dans un nouvel onglet</p>
+          <pre>
+            &lt;a href="le lien" target="_blank"&gt; (target="_blank") fait la dif! &lt;/a&gt;
+          </pre>
       </div>
     </div>
 
     <div id="dropdownListHtml">
       <h6>Dropdown list</h6>
-      <div class="ms-2">
+      <div>
+
         <form>
           <label for="test"> Liste de sélection </label>
           <select id="test" name="quoi?">
@@ -92,21 +97,70 @@
           </select>
         </form>
 
-        <pre class="mt-2">
-          &lt;form&gt;
-            &lt;label for="test"&gt; Liste de sélection &lt;/label&gt;
-            &lt;select id="test" name="quoi?"&gt;
-              &lt;option value="manger"&gt; Manger &lt;/option&gt;
-              &lt;option value="dormir"&gt; Dormir &lt;/option&gt;
-              &lt;option value="joué"&gt; Joué &lt;/option&gt;
-            &lt;/select&gt;
-          &lt;/form&gt;
-        </pre>
+        <div>
+          <pre class="mt-2">
+            &lt;form&gt;
+              &lt;label for="test"&gt; Liste de sélection &lt;/label&gt;
+              &lt;select id="test" name="quoi?"&gt;
+                &lt;option value="manger"&gt; Manger &lt;/option&gt;
+                &lt;option value="dormir"&gt; Dormir &lt;/option&gt;
+                &lt;option value="joué"&gt; Joué &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/form&gt;
+          </pre>
+        </div>
       </div>
     </div>
 
+    <div id="modifPoliceCasse">
+      <h6>balises de mise en page</h6>
+
+      <div>
+        <p class="ms-2">les titres</p>
+          <pre>
+            &lt;h1&gt; gros titre &lt;/h1&gt;
+            &lt;h2&gt; un poil plus petit &lt;/h2&gt;
+            &lt;h3&gt; encore plus petit &lt;/h3&gt;
+            &lt;h4&gt; toujours plus petit &lt;/h4&gt;
+            &lt;h5&gt; vous avez compris &lt;/h5&gt;
+            &lt;h6&gt; le délire &lt;/h6&gt;
+          </pre>
+      </div>
+
+      <div>
+        <p class="ms-2">Police de base</p>
+          <pre>
+            &lt;p&gt; ceci est un paragraphe &lt;/p&gt;
+            &lt;em&gt; <em> mettre en italique </em> &lt;/em&gt;
+            &lt;i&gt; pour les icones &lt;/i&gt;
+            &lt;strong&gt; <strong>ceci est en gras</strong> &lt;/strong&gt;
+            &lt;span&gt; pour isoler du texte (css particulier ou le mettre en valeur) &lt;/span&gt;
+            &lt;br&gt; sauter une ligne
+            &lt;hr&gt; créer une ligne de séparation
+          </pre>
+      </div>
+    </div>
+
+    <div id="imgV">
+      <h6>images et vidéos</h6>
+      <p class="ms-2">image</p>
+      <div>
+        <pre>
+          &lt;img src="votreimage.ext" alt="description de ton image"&gt;
+        </pre>
+      </div>
+
+      <p class="ms-2">video</p>
+      <div>
+        <pre>
+          &lt;video src="votre video.ext" controls&gt;
+            Video not supported
+          &lt;/video&gt;
+        </pre>
+      </div>
+    </div>
   </div>
-  <div>
+  <div class="fenE">
     <h2 class="text-center"> exemples</h2>
     <figure role="img" aria-labelledby="legende-vache">
       <pre>

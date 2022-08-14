@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { BarNavLangageComponent } from './nav-langages/bar-nav-langage/bar-nav-langage.component';
 import { NavLangagesModule } from './nav-langages/nav-langages.module';
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +19,6 @@ import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    // FontAwesomeModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     AppRoutingModule,
     NavLangagesModule
