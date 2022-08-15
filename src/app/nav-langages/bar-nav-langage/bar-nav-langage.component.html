@@ -11,5 +11,8 @@
       <p class="m-auto">{{ langage.name }}</p>
     </div>
     <hr class="p-auto w-50 ligne">
+    <div *ngFor="let titre of titres">
+      <p> {{titre.name}}</p>
+    </div>
   </div>
 </div>
