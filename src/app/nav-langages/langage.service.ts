@@ -24,6 +24,7 @@ export class LangageService {
     );
   }
 
+  // tu change tu met getTitre et tu envoi .get('api/${value}Titres')
   getHtmlTitre(): Observable <any> {
     return this.http.get<HtmlTitre []>('api/htmlTitres').pipe(
       tap((titles)=> {

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LangageService } from "../langage.service";
 import { Langage } from "../langage";
-import { HtmlTitre } from "../../html/htmlTitre";
 import { Router } from "@angular/router";
 
 
@@ -14,18 +13,19 @@ import { Router } from "@angular/router";
 export class BarNavLangageComponent implements OnInit {
   langages: Langage[] | undefined;
   titres: any;
+  page: string | undefined;
+  show = true;
 
   constructor(
     private langageService: LangageService,
     private router: Router
-  ) {}
+  ) {
+    this.page = undefined;
+  }
 
   ngOnInit() {
     this.langageService.getLangages().subscribe(
       langagesList => this.langages = langagesList
-    )
-    this.langageService.getHtmlTitre().subscribe(
-      titres => this.titres = titres
     )
   }
 
@@ -33,4 +33,15 @@ export class BarNavLangageComponent implements OnInit {
     this.router.navigate([`${lang.name}`]);
   }
 
+  displayTitle(lang: Langage) {
+    this.page = lang.name
+
+    if (this.page === 'html'){
+      this.langageService.getHtmlTitre().subscribe(
+        titres => this.titres = titres
+      )
+    }else {
+      this.titres = undefined;
+    }
+  }
 }

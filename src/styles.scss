@@ -5,23 +5,29 @@ html::-webkit-scrollbar{
 	border: 1px solid black;
 }
 
-// html {
-//   height: 100%;
-//   width: 100%;
-// }
+a {
+  text-decoration: inherit !important;
+}
 
 body {
   background-color: rgb(32, 33, 36) !important;
   height: 100%;
 }
 
+
 .navBarL {
   position: fixed;
+  overflow-y: scroll;
   top: 60px;
   left: 0;
   width: 200px;
   height: 100%;
   background-color:  rgb(32 33 36);
+  &::-webkit-scrollbar{
+    width: 10px;
+    background-color: #162246;
+    border: 1px solid black;
+  }
 }
 
 .pos{
