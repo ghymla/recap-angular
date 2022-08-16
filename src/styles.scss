@@ -4,6 +4,9 @@ html::-webkit-scrollbar{
 	background-color: #162246;
 	border: 1px solid black;
 }
+pre {
+  color: rgb(181, 182, 183);
+}
 
 a {
   text-decoration: inherit !important;
@@ -14,6 +17,9 @@ body {
   height: 100%;
 }
 
+.mpre {
+  margin: 0 6em;
+}
 
 .navBarL {
   position: fixed;

@@ -13,21 +13,31 @@ export const HTMLTITRES: HtmlTitre [] = [
   },
   {
     id: 3,
-    name: "Créé un lien interne",
-    ancre: "lienHtml"
-  },
-  {
-    id: 4,
-    name: "Dropdown list",
-    ancre: "dropdownListHtml"
-  },
-  {
-    id: 5,
     name: "balises de mise en page",
     ancre: "modifPoliceCasse"
   },
   {
+    id:4,
+    name: "liste",
+    ancre: "liste"
+  },
+  {
+    id: 5,
+    name: "Créé un lien interne",
+    ancre: "lienHtml"
+  },
+  {
     id: 6,
+    name: "Dropdown list",
+    ancre: "dropdownListHtml"
+  },
+  {
+    id: 7,
+    name: "champ d'écriture",
+    ancre: "input"
+  },
+  {
+    id: 8,
     name: "images et vidéos",
     ancre: "imgV"
   }

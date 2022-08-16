@@ -42,6 +42,41 @@
           <pre>
             &lt;footer&gt; Le pied de page &lt;/footer&gt;
           </pre>
+        </div>
+      </div>
+
+      <div id="modifPoliceCasse">
+        <h6>balises de mise en page</h6>
+
+        <div>
+          <p class="ms-2">les titres</p>
+            <pre>
+              &lt;h1&gt; gros titre &lt;/h1&gt;
+              &lt;h2&gt; un poil plus petit &lt;/h2&gt;
+              &lt;h3&gt; encore plus petit &lt;/h3&gt;
+              &lt;h4&gt; toujours plus petit &lt;/h4&gt;
+              &lt;h5&gt; vous avez compris &lt;/h5&gt;
+              &lt;h6&gt; le délire &lt;/h6&gt;
+            </pre>
+        </div>
+
+        <div>
+          <p class="ms-2">Police de base</p>
+            <pre>
+              &lt;p&gt; ceci est un paragraphe &lt;/p&gt;
+              &lt;em&gt; <em> mettre en italique </em> &lt;/em&gt;
+              &lt;i&gt; pour les icones &lt;/i&gt;
+              &lt;strong&gt; <strong>ceci est en gras</strong> &lt;/strong&gt;
+              &lt;span&gt; pour isoler du texte (css particulier ou le mettre en valeur) &lt;/span&gt;
+              &lt;br&gt; sauter une ligne
+              &lt;hr&gt; créer une ligne de séparation
+            </pre>
+        </div>
+      </div>
+
+    <div id="liste">
+      <h6>liste</h6>
+      <div>
         <p class="ms-2">créer des listes</p>
           <pre>
             &lt;ul&gt;
@@ -93,7 +128,7 @@
           <select id="test" name="quoi?">
             <option value="manger"> Manger </option>
             <option value="dormir"> Dormir </option>
-            <option value="joué"> Joué </option>
+            <option value="jouer"> Jouer </option>
           </select>
         </form>
 
@@ -104,7 +139,7 @@
               &lt;select id="test" name="quoi?"&gt;
                 &lt;option value="manger"&gt; Manger &lt;/option&gt;
                 &lt;option value="dormir"&gt; Dormir &lt;/option&gt;
-                &lt;option value="joué"&gt; Joué &lt;/option&gt;
+                &lt;option value="jouer"&gt; Jouer &lt;/option&gt;
               &lt;/select&gt;
             &lt;/form&gt;
           </pre>
@@ -112,34 +147,61 @@
       </div>
     </div>
 
-    <div id="modifPoliceCasse">
-      <h6>balises de mise en page</h6>
-
+    <div id="input">
+      <h6>Champ d'écriture</h6>
       <div>
-        <p class="ms-2">les titres</p>
+        <p class="ms-2">Barre de recherche</p>
           <pre>
-            &lt;h1&gt; gros titre &lt;/h1&gt;
-            &lt;h2&gt; un poil plus petit &lt;/h2&gt;
-            &lt;h3&gt; encore plus petit &lt;/h3&gt;
-            &lt;h4&gt; toujours plus petit &lt;/h4&gt;
-            &lt;h5&gt; vous avez compris &lt;/h5&gt;
-            &lt;h6&gt; le délire &lt;/h6&gt;
+            <input class="mb-2"  type="text">
+            &lt;input type="text"&gt;
           </pre>
-      </div>
-
-      <div>
-        <p class="ms-2">Police de base</p>
+        <p class="ms-2">Barre de recherche avec un titre</p>
           <pre>
-            &lt;p&gt; ceci est un paragraphe &lt;/p&gt;
-            &lt;em&gt; <em> mettre en italique </em> &lt;/em&gt;
-            &lt;i&gt; pour les icones &lt;/i&gt;
-            &lt;strong&gt; <strong>ceci est en gras</strong> &lt;/strong&gt;
-            &lt;span&gt; pour isoler du texte (css particulier ou le mettre en valeur) &lt;/span&gt;
-            &lt;br&gt; sauter une ligne
-            &lt;hr&gt; créer une ligne de séparation
+            <label for="titre">le titre ici</label>
+            <input class="mb-2"  type="text" id="titre">
+            &lt;label for="titre"&gt;le titre ici&lt;/label&gt;
+            &lt;input type="text" id="titre"&gt;
+          </pre>
+        <p class="ms-2">Recherche avec une valeur par defaut</p>
+          <pre>
+            <input class="mb-2"  type="text" value="defaut">
+            &lt;input type="text" value="defaut"&gt;
+          </pre>
+        <p class="ms-2">Password</p>
+          <pre>
+            <input class="mb-2"  type="password" value="defaut">
+            &lt;input type="password" value="defaut"&gt;
+          </pre>
+        <p class="ms-2">Number</p>
+          <pre>
+            <input class="mb-2"  type="number" value="15" step="1">
+            &lt;input type="number" value="15"&gt;
+          </pre>
+        <p class="ms-2">Volume</p>
+          <pre>
+            <input class="mb-2"  type="range" min="0" max="100" step="1">
+            &lt;input type="range" min="0" max="100" step="1"&gt;
+          </pre>
+        <p class="ms-2">Checkbox</p>
+          <pre>
+            <p class="mpre">coher ici: <input  type="checkbox"></p>
+            &lt;input  type="checkbox"&gt;
+            <p class="mpre pt-4">coher ici: <input  type="radio" ></p>
+            &lt;input  type="radio" &gt;
+          </pre>
+        <p class="ms-2">choix d'une couleur</p>
+          <pre>
+            <p class="mpre">choisir une couleur ici: <input  type="color" ></p>
+            &lt;input  type="color" &gt;
+          </pre>
+        <p class="ms-2">champ de commentaires</p>
+          <pre>
+            <textarea class="mb-2" cols="30" rows="10"></textarea>
+            &lt;textarea cols="30" rows="10"&gt;&lt;/textarea&gt;
           </pre>
       </div>
     </div>
+
 
     <div id="imgV">
       <h6>images et vidéos</h6>
@@ -159,7 +221,11 @@
         </pre>
       </div>
     </div>
+
+
   </div>
+
+
   <div class="fenE">
     <h2 class="text-center"> exemples</h2>
     <figure role="img" aria-labelledby="legende-vache">
