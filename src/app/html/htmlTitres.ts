@@ -45,6 +45,11 @@ export const HTMLTITRES: HtmlTitre [] = [
     id:9,
     name: "Création de tableaux",
     ancre: "table"
+  },
+  {
+    id:10,
+    name: "Quelque balises",
+    ancre: "balises"
   }
 
 ]
