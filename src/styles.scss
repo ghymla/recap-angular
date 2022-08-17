@@ -4,6 +4,7 @@ html::-webkit-scrollbar{
 	background-color: #162246;
 	border: 1px solid black;
 }
+
 pre {
   color: rgb(181, 182, 183);
 }
@@ -37,13 +38,13 @@ body {
 }
 
 .pos{
-  // position: relative;
-  // left: 0;
-  // top: 0;
+  position: relative;
+  left: 205px;
+  top: 65px;
   // width: 100%;
   // height: 100%;
-  margin-top: 65px;
-  margin-left: 205px;
+  // margin-top: 65px;
+  // margin-left: 205px;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -72,6 +73,8 @@ body {
 .fenE {
   // position: absolute;
   // right: 0;
+  position: sticky;
+  top: 60px;
   color: grey;
   background-color: black;
   margin-left: 5px;

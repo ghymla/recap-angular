@@ -27,6 +27,7 @@ export class BarNavLangageComponent implements OnInit {
     this.langageService.getLangages().subscribe(
       langagesList => this.langages = langagesList
     )
+    this.page;
   }
 
   goToLangage(lang: Langage){

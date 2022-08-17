@@ -3,7 +3,7 @@ import { HtmlTitre } from "./htmlTitre";
 export const HTMLTITRES: HtmlTitre [] = [
   {
     id: 1,
-    name: "page de base en HTML",
+    name: "Page de base en HTML",
     ancre: "baseHtml"
   },
   {
@@ -13,12 +13,12 @@ export const HTMLTITRES: HtmlTitre [] = [
   },
   {
     id: 3,
-    name: "balises de mise en page",
+    name: "Balises de mise en page",
     ancre: "modifPoliceCasse"
   },
   {
     id:4,
-    name: "liste",
+    name: "Liste",
     ancre: "liste"
   },
   {
@@ -33,12 +33,18 @@ export const HTMLTITRES: HtmlTitre [] = [
   },
   {
     id: 7,
-    name: "champ d'écriture",
+    name: "Champ d'écriture",
     ancre: "input"
   },
   {
     id: 8,
-    name: "images et vidéos",
+    name: "Images et vidéos",
     ancre: "imgV"
+  },
+  {
+    id:9,
+    name: "Création de tableaux",
+    ancre: "table"
   }
+
 ]
