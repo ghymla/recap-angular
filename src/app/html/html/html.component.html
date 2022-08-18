@@ -258,7 +258,21 @@
 
     <div id="balises">
       <h6>Quelque balises</h6>
-      <div><pre> un recap des balises ici !!</pre></div>
+      <div class="d-flex">
+        <div class="d-flex flex-column">
+          <div  class="mpre tabl-bal bals" *ngFor="let balise of balises">
+            <div >
+              {{ balise.balise }}
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <div  *ngFor="let balise of balises">
+            <div >{{ balise.explain }}</div>
+            <hr>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
