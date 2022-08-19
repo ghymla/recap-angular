@@ -1,1 +1,98 @@
-<p>css works!</p>
+
+<div class="d-flex pos">
+
+  <div class="fenP">
+    <div id="link">
+      <h6>Insérer du css dans la page html </h6>
+      <pre>
+        &lt; link href="cheminDuFichierCss" rel="stylesheet"&gt;
+      </pre>
+    </div>
+
+    <div id="crea">
+      <h6> Syntaxe de création </h6>
+      <pre>
+        monSelecteur {{ '{' }} propriéter: value; {{ '}' }}
+
+        h1 {{ '{' }}
+          font-family: cursive;
+          color: white;
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div id="id">
+      <h6> Attribuer un ID a une balise </h6>
+      <pre>
+        &lt;div id="maDivBlue"&gt; &lt;/div&gt;
+
+        #maDivBlue {{ '{' }}
+          color: blue;
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div id="class">
+      <h6> Attribuer une class </h6>
+      <pre>
+        &lt;div class="maDivBlue"&gt; &lt;/div&gt;
+
+        .maDivBlue {{ '{' }}
+          color: red;
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div id="chain">
+      <h6> Chaining, propriété de style en cascade </h6>
+      <pre>
+        <em>// séléctionne les balises p dans les div de class "maDivBlue"</em>
+        .maDivBlue p {{ '{' }}
+        font-style: italic;
+        {{ '}' }}
+
+        <em>// séléctionne les balises de class "maDivBlue" dans les balises p </em>
+        p.maDivBlue {{ '{' }}
+        text-align: center;
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div id="hover">
+      <h6> Réaction a la sourie </h6>
+      <pre>
+        <em>// le background des class "nav" changent de couleur quand la sourie passe dessus </em>
+        .nav:hover {{ '{' }}
+        background-color: green;
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div id="liste">
+      <h6> Quelque propriétés css </h6>
+    </div>
+  </div>
+
+
+  <div class="fenE">
+    <div class="mb-2">
+      <h2 class="text-center"> exemples</h2>
+      <figure role="img" aria-labelledby="legende-vache">
+        <pre>
+        _____________
+      < Oh la vache !>
+        -------------
+              \   ^__^
+                \  (oo)\_______
+                  (__)\       )\/\
+                      ||----w |
+                      ||     ||
+        </pre>
+        <figcaption id="legende-vache">
+          Une vache qui dit « Oh la vache ! ». La vache est illustrée avec du texte à chasse fixe.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+</div>

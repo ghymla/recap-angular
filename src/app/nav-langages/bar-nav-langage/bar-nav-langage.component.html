@@ -15,7 +15,7 @@
     <!-- si on est dans le section du langage on montre les titres -->
     <div *ngIf="page == langage.name">
       <div *ngFor="let titre of titres">
-        <a href="html#{{titre.ancre}}">
+        <a href="{{langage.name}}#{{titre.ancre}}">
           <p> {{titre.name}}</p>
         </a>
       </div>

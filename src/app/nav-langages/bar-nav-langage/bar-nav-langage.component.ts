@@ -37,8 +37,8 @@ export class BarNavLangageComponent implements OnInit {
   displayTitle(lang: Langage) {
     this.page = lang.name
 
-    if (this.page === 'html'){
-      this.langageService.getHtmlTitre().subscribe(
+    if (this.page){
+      this.langageService.getTitre(lang.name).subscribe(
         titres => this.titres = titres
       )
     }else {

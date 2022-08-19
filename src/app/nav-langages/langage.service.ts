@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Langage } from "./langage";
-import { HtmlTitre } from "../html/htmlTitre";
 import { HttpClient } from "@angular/common/http";
 import { catchError, Observable, of, tap } from 'rxjs';
 
@@ -25,8 +24,8 @@ export class LangageService {
   }
 
   // tu change tu met getTitre et tu envoi .get('api/${value}Titres')
-  getHtmlTitre(): Observable <any> {
-    return this.http.get<HtmlTitre []>('api/htmlTitres').pipe(
+  getTitre(lang: string): Observable <any> {
+    return this.http.get< any >(`api/${lang}Titres`).pipe(
       tap((titles)=> {
         console.table(titles);
       }),
@@ -36,4 +35,5 @@ export class LangageService {
       })
     )
   }
+
 }
