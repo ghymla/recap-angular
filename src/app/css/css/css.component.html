@@ -70,6 +70,15 @@
 
     <div id="liste">
       <h6> Quelque propriétés css </h6>
+      <table>
+        <div *ngFor="let prop of proplist">
+          <tr>
+            <td class="tablCode ps-3"> <pre> {{ prop?.code }} </pre></td>
+            <td class="ps-3"> <em> {{ prop?.explain }} </em></td>
+          </tr>
+        </div>
+      </table>
+
     </div>
   </div>
 

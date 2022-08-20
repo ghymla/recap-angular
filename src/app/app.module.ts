@@ -10,6 +10,7 @@ import { BarNavLangageComponent } from './nav-langages/bar-nav-langage/bar-nav-l
 import { NavLangagesModule } from './nav-langages/nav-langages.module';
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
 import { HtmlModule } from './html/html.module';
+import { CssModule } from './css/css.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HtmlModule } from './html/html.module';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     AppRoutingModule,
     NavLangagesModule,
-    HtmlModule
+    HtmlModule,
+    CssModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]
