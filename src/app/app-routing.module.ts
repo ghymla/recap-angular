@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageNoFoundComponent } from "./page-no-found/page-no-found.component";
 import { HtmlComponent } from "./html/html/html.component";
 import { CssComponent } from './css/css/css.component';
+import { JavaScriptComponent } from './java-script/java-script/java-script.component';
 
 const routes: Routes = [
   {path: 'html', component: HtmlComponent },
   {path: 'css' , component: CssComponent},
+  {path: 'Java Script' , component: JavaScriptComponent},
   {path: '**', component: PageNoFoundComponent}
 ];
 
