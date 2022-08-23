@@ -1,19 +1,19 @@
 export class HtmlTitre {
   id: number;
-  name: string;
+  titre: string;
   ancre: string;
 
   constructor(
     // valeur par defaut avec leur type
-    // name: type = "valeur par defaut",
+    // titre: type = "valeur par defaut",
     id: number,
-    name: string = "titre inconnue",
+    titre: string = "titre inconnue",
     ancre: string= "pas d'ancre liée",
     ) {
       // assignation
-      // this.name = name;
+      // this.titre = titre;
       this.id = id;
-      this.name = name;
+      this.titre = titre;
       this.ancre = ancre;
     }
 }

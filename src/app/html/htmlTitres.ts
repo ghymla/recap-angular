@@ -3,52 +3,52 @@ import { HtmlTitre } from "./htmlTitre";
 export const HTMLTITRES: HtmlTitre [] = [
   {
     id: 1,
-    name: "Page de base en HTML",
+    titre: "Page de base en HTML",
     ancre: "baseHtml"
   },
   {
     id: 2,
-    name: "Différentes sections",
+    titre: "Différentes sections",
     ancre: "sectionsHtml"
   },
   {
     id: 3,
-    name: "Balises de mise en page",
+    titre: "Balises de mise en page",
     ancre: "modifPoliceCasse"
   },
   {
     id:4,
-    name: "Liste",
+    titre: "Liste",
     ancre: "liste"
   },
   {
     id: 5,
-    name: "Créé un lien interne",
+    titre: "Créé un lien interne",
     ancre: "lienHtml"
   },
   {
     id: 6,
-    name: "Dropdown list",
+    titre: "Dropdown list",
     ancre: "dropdownListHtml"
   },
   {
     id: 7,
-    name: "Champ d'écriture",
+    titre: "Champ d'écriture",
     ancre: "input"
   },
   {
     id: 8,
-    name: "Images et vidéos",
+    titre: "Images et vidéos",
     ancre: "imgV"
   },
   {
     id:9,
-    name: "Création de tableaux",
+    titre: "Création de tableaux",
     ancre: "table"
   },
   {
     id:10,
-    name: "Quelque balises",
+    titre: "Quelque balises",
     ancre: "balises"
   }
 
