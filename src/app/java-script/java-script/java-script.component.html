@@ -2,7 +2,11 @@
 <div class="d-flex pos">
 
   <div class="fenP">
-
+    <div *ngFor="let titre of titres">
+      <div id=" {{ titre.ancre }}">
+        <h6>{{ titre.titre }}</h6>
+      </div>
+    </div>
 
 
   </div>

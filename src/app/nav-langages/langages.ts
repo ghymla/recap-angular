@@ -17,7 +17,7 @@ export const LANGAGES: Langage [] = [
     id: 3,
     name: "Java Script",
     logo: "../../assets/logo/logo-js.png",
-    route: "JavaScript"
+    route: "javaScript"
   },
   {
     id: 4,
