@@ -26,9 +26,9 @@ export class LangageService {
   // tu change tu met getTitre et tu envoi .get('api/${value}Titres')
   getTitre(lang: string): Observable <any> {
     return this.http.get< any >(`api/${lang}Titres`).pipe(
-      tap((titles)=> {
-        console.table(titles);
-      }),
+      // tap((titles)=> {
+      //   console.table(titles);
+      // }),
       catchError((error) => {
         console.error(error);
         return of([]);

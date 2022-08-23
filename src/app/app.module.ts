@@ -11,6 +11,7 @@ import { NavLangagesModule } from './nav-langages/nav-langages.module';
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
 import { HtmlModule } from './html/html.module';
 import { CssModule } from './css/css.module';
+import { JavaScriptModule } from './java-script/java-script.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CssModule } from './css/css.module';
     AppRoutingModule,
     NavLangagesModule,
     HtmlModule,
-    CssModule
+    CssModule,
+    JavaScriptModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]

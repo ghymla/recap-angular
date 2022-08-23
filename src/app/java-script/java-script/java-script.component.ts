@@ -12,7 +12,7 @@ export class JavaScriptComponent implements OnInit {
   langage: string = "javaScript";
 
   constructor(
-    private langageService: LangageService
+    private langageService: LangageService,
   ) { }
 
   ngOnInit() {
@@ -24,7 +24,9 @@ export class JavaScriptComponent implements OnInit {
     this.langageService.getTitre(this.langage).subscribe(
       titres => {
         this.titres = titres;
-        console.table(`les tiiiiiitres : ${titres}`);
+        this.titres?.forEach((element: { titre: string; }) => {
+          console.log(element.titre)
+        });
       }
     )
   }
