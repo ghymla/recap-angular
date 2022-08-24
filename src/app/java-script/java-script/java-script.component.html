@@ -5,6 +5,12 @@
     <div *ngFor="let titre of titres">
       <div id=" {{ titre.ancre }}">
         <h6>{{ titre.titre }}</h6>
+        <div *ngFor="let content of contents">
+          <div *ngIf="content.titre === titre.titre">
+            <p> {{ content.chapitre }}</p>
+            <pre> {{ content.content }}</pre>
+          </div>
+        </div>
       </div>
     </div>
 

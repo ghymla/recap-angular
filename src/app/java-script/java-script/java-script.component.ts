@@ -21,6 +21,7 @@ export class JavaScriptComponent implements OnInit {
 
   ngOnInit() {
     this.getTitres()
+    this.getContent()
   }
 
 
