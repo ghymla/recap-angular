@@ -6,6 +6,7 @@ import { BALISES } from "./html/balises";
 import { CSSTITRES } from "./css/cssTitres";
 import { CSSPROPS } from "./css/cssProps";
 import { JAVASCRIPTTITRES } from "./java-script/javaScriptTitres";
+import { JSCONTENTS } from "./java-script/JSContents";
 
 @Injectable({
   providedIn: 'root'
@@ -18,14 +19,16 @@ export class InMemoryDataService implements InMemoryDbService {
     const balises = BALISES;
     const cssTitres = CSSTITRES;
     const cssProps = CSSPROPS;
-    const javaScriptTitres = JAVASCRIPTTITRES
+    const javaScriptTitres = JAVASCRIPTTITRES;
+    const jsContents = JSCONTENTS
     return {
       langages,
       htmlTitres,
       balises,
       cssTitres,
       cssProps,
-      javaScriptTitres
+      javaScriptTitres,
+      jsContents
     };
   }
 }

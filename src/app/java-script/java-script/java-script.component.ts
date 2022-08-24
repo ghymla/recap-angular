@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LangageService } from "../../nav-langages/langage.service";
+import { JavaScriptService } from "../java-script.service";
 import { JavaScriptTitre } from "../javaScriptTitre";
+import { JSContent } from "../JSContent";
 
 @Component({
   selector: 'app-java-script',
@@ -10,9 +12,11 @@ import { JavaScriptTitre } from "../javaScriptTitre";
 export class JavaScriptComponent implements OnInit {
   titres: JavaScriptTitre [] | undefined;
   langage: string = "javaScript";
+  contents: JSContent [] | undefined;
 
   constructor(
     private langageService: LangageService,
+    private jsService: JavaScriptService
   ) { }
 
   ngOnInit() {
@@ -28,6 +32,12 @@ export class JavaScriptComponent implements OnInit {
           console.log(element.titre)
         });
       }
+    )
+  }
+
+  getContent() {
+    this.jsService.getJSContent().subscribe(
+      contents => this.contents = contents
     )
   }
 }
