@@ -21,32 +21,98 @@ export const JSMETHODES: jsMethode [] = [
   },
   {
     id: 4,
+    categorie: "Variable",
+    code: "maVar.length",
+    explain: "Connaitre la longueur de sa variable"
+  },
+  {
+    id: 5,
+    categorie: "Variable",
+    code: "Number(maVAr)",
+    explain: "Forcer une ma Variable a devenir un type Number"
+  },
+  {
+    id: 6,
+    categorie: "Variable",
+    code: "maVar.toString()",
+    explain: "Forcer une ma Variable a devenir un type String"
+  },
+  {
+    id: 7,
     categorie: "Array",
     code: "maString.split(argument(s))",
     explain: "Séparer une String en un array au niveau de l'argument"
   },
   {
-    id: 5,
+    id: 8,
     categorie: "Array",
     code: "monArray.join(argument(s))",
     explain: "Regrouper un Array en une string au niveau de l'argument"
   },
   {
-    id: 6,
+    id: 9,
     categorie: "Array",
     code: "monArray.toString()",
     explain: "Convertir un Array en String"
   },
   {
-    id: 7,
+    id: 10,
     categorie: "Array",
     code: "monArray.push(argument(s))",
     explain: "Rajouter mon argument a mon Array"
   },
   {
-    id: 6,
+    id: 11,
     categorie: "Array",
     code: "monArray.pop(argument(s))",
     explain: "Supprimer l'argument de mon Array"
   },
+  {
+    id: 12,
+    categorie: "Array",
+    code: "monArray.map(instruction(s))",
+    explain: "Créé un nouvelle Array modifié"
+  },
+  {
+    id: 13,
+    categorie: "Array",
+    code: "monArray.filter(instruction(s))",
+    explain: "Créé un nouvelle Array en Filtrant le premier"
+  },
+  {
+    id: 14,
+    categorie: "Array",
+    code: "monArray.findIndex(instruction(s))",
+    explain: "Créé un nouvelle Array avec les index voulus"
+  },
+  {
+    id: 15,
+    categorie: "Array",
+    code: "monArray.reduce((accumulateur, current value) => instruction(s))",
+    explain: "Créé une nouvelle Variable d'une valeur unique (équivaut a une boucle For)"
+  },
+  {
+    id: 16,
+    categorie: "Array",
+    code: "monArray.some(instruction)",
+    explain: "Renvoi un Booléan, test la condition dans son Array, ne modifie pas l'array d'origine"
+  },
+  {
+    id: 16,
+    categorie: "Array",
+    code: "monArray.forEach(instruction)",
+    explain: "Vient itéré sur chaque éléments de l'Array et éxecute l'instruction"
+  },
+  {
+    id: 17,
+    categorie: "Array",
+    code: "monArray.sort()",
+    explain: "Trie l'Array dans l'ordre croissant ou alphabétique"
+  },
+  {
+    id: 18,
+    categorie: "Array",
+    code: "monArray.reverse()",
+    explain: "Retourne L'array, il le lit dans l'autre sens"
+  }
 ]
