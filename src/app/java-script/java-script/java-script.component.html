@@ -3,7 +3,8 @@
 
   <div class="fenP">
     <div *ngFor="let titre of titres">
-      <div id=" {{ titre.ancre }}">
+
+      <div [id]=" titre.ancre ">
         <h6>{{ titre.titre }}</h6>
         <div *ngFor="let content of contents">
           <div *ngIf="content.titre === titre.titre">
@@ -12,6 +13,31 @@
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="tablCode">
+      <table>
+        <p> Variable </p>
+          <div *ngFor="let method of methods">
+            <div *ngIf="method.categorie == 'Variable'">
+                <tr>
+                  <td class="ps-3"><pre>{{ method?.code }}</pre></td>
+                  <td class="ps-3"><em>{{ method?.explain }}</em></td>
+                </tr>
+            </div>
+          </div>
+
+        <p> Array </p>
+          <div *ngFor="let method of methods">
+            <div *ngIf="method.categorie == 'Array'">
+                <tr>
+                  <td class="ps-3"><pre>{{ method?.code }}</pre></td>
+                  <td class="ps-3"><em>{{ method?.explain }}</em></td>
+                </tr>
+            </div>
+          </div>
+      </table>
     </div>
 
 

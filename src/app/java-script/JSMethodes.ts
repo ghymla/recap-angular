@@ -38,6 +38,12 @@ export const JSMETHODES: jsMethode [] = [
     explain: "Forcer une ma Variable a devenir un type String"
   },
   {
+    id: 22,
+    categorie: "Variable",
+    code: "Array.from(maVar)",
+    explain: "Change votre Variable en un Array"
+  },
+  {
     id: 7,
     categorie: "Array",
     code: "maString.split(argument(s))",
@@ -114,5 +120,23 @@ export const JSMETHODES: jsMethode [] = [
     categorie: "Array",
     code: "monArray.reverse()",
     explain: "Retourne L'array, il le lit dans l'autre sens"
+  },
+  {
+    id: 19,
+    categorie: "Array",
+    code: "monArray.includes(argument(s))",
+    explain: "Vérifie si l'élément(s) est inclue dans l'Array"
+  },
+  {
+    id: 20,
+    categorie: "Array",
+    code: "monArray.every(condition)",
+    explain: "Vérifie si tous les éléments de l'Array ont réussi la condition"
+  },
+  {
+    id: 21,
+    categorie: "Array",
+    code: "Array.of(élément(s))",
+    explain: "Création d'un Array avec tous les éléménts passer en paramètre"
   }
 ]
