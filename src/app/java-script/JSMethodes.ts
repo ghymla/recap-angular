@@ -16,7 +16,7 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 3,
     categorie: "Variable",
-    code: "maVar.replace('lettre(s)A','lettre(s)B')",
+    code: "maVar.replace(\n  'lettre(s)A','lettre(s)B'\n)",
     explain: "Remplacer la/les lettre(s) A par la/les lettre(s) B"
   },
   {
@@ -94,7 +94,7 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 15,
     categorie: "Array",
-    code: "monArray.reduce((accumulateur, current value) => instruction(s))",
+    code: "monArray.reduce(\n  (accumulateur, current value)\n  => instruction(s)\n)",
     explain: "Créé une nouvelle Variable d'une valeur unique (équivaut a une boucle For)"
   },
   {
