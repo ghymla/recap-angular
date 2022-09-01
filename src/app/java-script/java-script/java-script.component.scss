@@ -2,6 +2,12 @@
   width: 280px;
 }
 
+.colCode:hover {
+  cursor: help;
+  border-radius: 5px;
+  width: 270px;
+  background-color: rgb(60, 60, 60);
+}
 .sepa {
   width: 75%;
   margin: 30px auto;

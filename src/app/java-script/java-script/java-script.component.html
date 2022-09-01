@@ -5,6 +5,7 @@
     <div *ngFor="let titre of titres">
 
       <div [id]=" titre.ancre ">
+        <!-- j'affiche une barre de séparation SAUF pour la première section qui est celle des variables -->
         <hr *ngIf="titre.titre != 'Variable'" class="sepa">
         <h6 class="mt-3 mb-4">{{ titre.titre }}</h6>
         <div *ngFor="let content of contents">
@@ -21,7 +22,7 @@
     <table>
       <p> Variable </p>
         <div *ngFor="let method of methods">
-          <div *ngIf="method.categorie == 'Variable'">
+          <div *ngIf="method.categorie == 'Variable'" (click)="displayExplain(method.name)">
               <tr>
                 <td class="ps-3 colCode"><pre>{{ method?.code }}</pre></td>
                 <td class="ps-3"><em>{{ method?.explain }}</em></td>
@@ -46,7 +47,10 @@
   <div class="fenE">
     <div class="mb-2">
       <h2 class="text-center"> exemples </h2>
-      <app-to-case></app-to-case>
+      <div *ngIf="!displayMethod">
+        <p> des exemple ici !!!</p>
+      </div>
+      <app-to-case *ngIf="displayMethod == 'case'"></app-to-case>
     </div>
   </div>
 

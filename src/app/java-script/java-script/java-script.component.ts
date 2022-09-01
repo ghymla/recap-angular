@@ -15,6 +15,7 @@ export class JavaScriptComponent implements OnInit {
   langage: string = "javaScript";
   contents: JSContent [] | undefined;
   methods: jsMethode [] | undefined;
+  displayMethod: string | undefined;
 
 
   constructor(
@@ -50,5 +51,9 @@ export class JavaScriptComponent implements OnInit {
     this.jsService.getJSMethods().subscribe(
       methods => this.methods = methods
     )
+  }
+
+  displayExplain(method: string) {
+    this.displayMethod = method;
   }
 }
