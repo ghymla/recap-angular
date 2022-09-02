@@ -1,29 +1,30 @@
-<div>
+<div class="m-3">
   <div>
     ceci est l'exemple des ToUpperCase
     <pre>
       <span class="maVar">maVar</span> = "je suis un début de paragraphe"
-      <span class="maVAr">sortie </span> = <span class="maVAr">maVar</span ><span class="Method">.toUpperCase()</span>
-      console.log(<span class="mavar"> sortie </span>)
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.toUpperCase()</span>
+      console.log(<span class="maVar"> sortie </span>)
       <span class="outPut">// outPut -> JE SUIS UN DEBUT DE PARAGRAPHE</span>
     </pre>
   </div>
 
-  <div>
+  <div class="mt-3">
     <h6>try it !!</h6>
-    <div>
+    <div class="try">
       <input
+        class="input"
         type="text"
         placeholder="transformation to Uppercase"
         #transf
         (keyup)="userTryUp(transf.value)"
       >
-      <div *ngIf="transfUp">
+      <div *ngIf="transfUp" class="m-2">
       <p class="output"> Voici le résultat : {{transfUp}}</p>
       </div>
 
-      <div *ngIf="!transfUp">
-      <p class ="com"> Esayer par vous même ...</p>
+      <div *ngIf="!transfUp" class="m-2">
+      <p> Esayer par vous même ...</p>
       </div>
     </div>
   </div>
@@ -31,31 +32,34 @@
 
 <div class="triche"></div>
 
-<div>
+<div class="m-3">
   <div>
     ceci est l'exemple des ToLowerCase
     <pre>
       <span class="maVar">maVar</span> = "je SUIS minuscule"
-      <span class="maVAr">sortie </span> = <span class="maVAr">maVar</span ><span class="Method">.toLowerCase()</span>
-      console.log(<span class="mavar"> sortie </span>)
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.toLowerCase()</span>
+      console.log(<span class="maVar"> sortie </span>)
       <span class="outPut">// outPut -> je suis minuscule</span>
     </pre>
   </div>
 
-  <div>
+  <div class="mt-3">
     <h6>try it !!</h6>
-    <input
-      type="text"
-      placeholder="transformation to lowercase"
-      #transfLower
-      (keyup)="userTryMin(transfLower.value)"
-    >
-    <div *ngIf="transfMin">
-    <p class="output"> Voici le résultat : {{transfMin}}</p>
-    </div>
+    <div class="try">
+      <input
+        class="input"
+        type="text"
+        placeholder="transformation to lowercase"
+        #transfLower
+        (keyup)="userTryMin(transfLower.value)"
+      >
+      <div *ngIf="transfMin">
+      <p class="output"> Voici le résultat : {{transfMin}}</p>
+      </div>
 
-    <div *ngIf="!transfMin">
-    <p class ="com"> Esayer par vous même ...</p>
+      <div *ngIf="!transfMin">
+      <p class ="com"> Esayer par vous même ...</p>
+      </div>
     </div>
   </div>
 </div>

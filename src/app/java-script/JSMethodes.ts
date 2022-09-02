@@ -6,14 +6,14 @@ export const JSMETHODES: jsMethode [] = [
     categorie: "Variable",
     name: "case",
     code: "maVar.toLowerCase()",
-    explain: "Mettre la Variable en  minuscule"
+    explain: "Mettre le contenu de la Variable en  minuscule"
   },
   {
     id: 2,
     categorie: "Variable",
     name: "case",
     code: "maVar.toUpperCase()",
-    explain: "Mettre la Variable en  Majuscule"
+    explain: "Mettre le contenu de la Variable en  Majuscule"
   },
   {
     id: 3,
