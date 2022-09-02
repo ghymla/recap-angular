@@ -1,0 +1,59 @@
+<div class="m-3">
+  <div>
+    <p>Exemples de replace()</p>
+    <pre>
+      <span class="maVar">maVar</span> = "j'ai,oublié,les,espaces"
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.replace(</span>',',' '<span class="method">)</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> j'ai oublié,les,espaces</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-2">
+    <pre>
+      <span class="maVar">maVar</span> = "je suis un homme"
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.replace(</span>'un homme','une femme'<span class="method">)</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> je suis une femme</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-3">
+    <h6>try it !!</h6>
+    <div class="try">
+      <textarea
+        class="textarea"
+        cols="30" rows="5"
+        placeholder="Votre string !"
+        #origin
+      ></textarea>
+
+      <input
+        class="input"
+        placeholder="Votre paramètre a remplacer"
+        #para1
+        type="text"
+      >
+
+      <input
+        class="input"
+        placeholder="Votre changement"
+        #para2
+        type="text"
+        (keyup.enter)="tryReplace(origin.value, para1.value, para2.value)"
+      >
+
+      <div *ngIf="replaced" class="m-2">
+      <p class="output"> Voici le résultat : {{replaced}}</p>
+      </div>
+
+      <div *ngIf="!replaced" class="m-2">
+      <p> Esayer par vous même ...</p>
+      </div>
+    </div>
+  </div>
+</div>

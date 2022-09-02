@@ -1,0 +1,46 @@
+<div class="m-3">
+  <div>
+    <p>Exemples de length</p>
+    <pre>
+      <span class="maVar">maVar</span> = "j'ai besoin de connaître le nombre de caractères"
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.length</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> 48</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-2">
+    <pre>
+      <span class="maVar">monArray</span> = ['string', 4, 'une blague', 'inspiration']
+      <span class="maVar">sortie </span> = <span class="maVar">monArray</span ><span class="method">.length</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> 4</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-3">
+    <h6>try it !!</h6>
+    <div class="try">
+      <textarea
+        class="textarea"
+        cols="30" rows="5"
+        placeholder="Votre string !"
+        #longueur
+        (keyup)="tryLength(longueur.value)"
+      ></textarea>
+
+
+      <div *ngIf="nbCaract" class="m-2">
+      <p class="output"> Voici le résultat : {{nbCaract}}</p>
+      </div>
+
+      <div *ngIf="!nbCaract" class="m-2">
+      <p> Esayer par vous même ...</p>
+      </div>
+    </div>
+  </div>
+</div>

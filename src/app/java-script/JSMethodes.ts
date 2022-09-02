@@ -20,7 +20,7 @@ export const JSMETHODES: jsMethode [] = [
     categorie: "Variable",
     name: "replace",
     code: "maVar.replace(\n  'lettre(s)A','lettre(s)B'\n)",
-    explain: "Remplacer la/les lettre(s) A par la/les lettre(s) B"
+    explain: "Remplacer la première lettre A par la lettre B"
   },
   {
     id: 4,
