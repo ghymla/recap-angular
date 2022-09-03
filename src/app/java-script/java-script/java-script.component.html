@@ -32,7 +32,7 @@
 
       <p class="mt-4"> Array </p>
         <div *ngFor="let method of methods">
-          <div *ngIf="method.categorie == 'Array'">
+          <div *ngIf="method.categorie == 'Array'" (click)="displayExplain(method.name)">
               <tr>
                 <td class="ps-3 colCode"><pre>{{ method?.code }}</pre></td>
                 <td class="ps-3"><em>{{ method?.explain }}</em></td>
@@ -56,6 +56,7 @@
       <app-number *ngIf="displayMethod == 'number'"></app-number>
       <app-to-string *ngIf="displayMethod == 'toString'"></app-to-string>
       <app-from *ngIf="displayMethod == 'from'"></app-from>
+      <app-split-join *ngIf="displayMethod == 'split-join'"></app-split-join>
     </div>
   </div>
 

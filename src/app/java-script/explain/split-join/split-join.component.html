@@ -1,0 +1,94 @@
+<div class="m-3">
+  <div>
+    <p>Exemples de split()</p>
+    <pre>
+      const <span class="maVar">maVar</span> = "pomme orange fraise"
+      const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.split(</span>' '<span class="method">)</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> pomme, orange, fraise  | type: objet</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-2">
+    <p>Exemples de join()</p>
+    <pre>
+      const <span class="maVar">maVar</span> = ["pomme", "orange", "fraise"]
+      const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.join(</span>' '<span class="method">)</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> pomme orange fraise | type: string</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-3">
+    <div>
+      <h6>try split()</h6>
+      <div class="try">
+        <input
+          class="input"
+          placeholder="Votre string !"
+          #vers
+        >
+
+        <input
+          class="input"
+          placeholder="Votre séparation"
+          #separation
+          type="text"
+        >
+        <button class="ms-2 btn btn-primary" (click)="trySplit(vers.value, separation.value)">Enter</button>
+
+        <div *ngIf="resultToSplit" class="m-2">
+          <p class="output"> Voici le résultat : {{resultToSplit}}</p>
+          </div>
+
+          <div *ngIf="!resultToSplit" class="m-2">
+          <p> Esayer par vous même ...</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="separation"></div>
+
+    <div>
+      <h6>try join()</h6>
+      <div class="try">
+
+        <input
+        class="input"
+        placeholder="Votre Array !"
+        #element
+        (keyup.enter)="creatArray(element.value)"
+        >
+
+        <input
+          class="input"
+          placeholder="Votre jonction !"
+          type="text"
+          #sep
+          (keyup.enter)="tryJoin(sep.value)"
+        >
+
+        <div *ngIf="resultToJoin" class="m-2">
+          <p class="output"> Voici le résultat : {{resultToJoin}}</p>
+        </div>
+
+        <div *ngIf="!resultToJoin" class="m-2">
+          <p> Esayer par vous même ...</p>
+        </div>
+        <div *ngIf="userArray" class="m-2">
+          <p class="output"> Voici votre Array : {{displayArray}}</p>
+        </div>
+
+        <div *ngIf="!userArray" class="m-2">
+          <p> créé un array (un élément par un élément) ...</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

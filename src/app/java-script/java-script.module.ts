@@ -7,6 +7,7 @@ import { LengthComponent } from './explain/length/length.component';
 import { NumberComponent } from './explain/number/number.component';
 import { ToStringComponent } from './explain/to-string/to-string.component';
 import { FromComponent } from './explain/from/from.component';
+import { SplitJoinComponent } from './explain/split-join/split-join.component';
 
 
 
@@ -18,7 +19,8 @@ import { FromComponent } from './explain/from/from.component';
     LengthComponent,
     NumberComponent,
     ToStringComponent,
-    FromComponent
+    FromComponent,
+    SplitJoinComponent
   ],
   imports: [
     CommonModule

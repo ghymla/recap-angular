@@ -53,14 +53,14 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 7,
     categorie: "Array",
-    name: "split",
+    name: "split-join",
     code: "maString.split(argument(s))",
     explain: "Séparer une String en un array au niveau de l'argument"
   },
   {
     id: 8,
     categorie: "Array",
-    name: "join",
+    name: "split-join",
     code: "monArray.join(argument(s))",
     explain: "Regrouper un Array en une string au niveau de l'argument"
   },
