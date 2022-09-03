@@ -39,9 +39,9 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 6,
     categorie: "Variable",
-    name: "varToString",
+    name: "toString",
     code: "maVar.toString()",
-    explain: "Forcer une ma Variable a devenir un type String"
+    explain: "Forcer ma Variable a devenir un type String"
   },
   {
     id: 22,
@@ -67,7 +67,7 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 9,
     categorie: "Array",
-    name: "arrayToString",
+    name: "toString",
     code: "monArray.toString()",
     explain: "Convertir un Array en String"
   },

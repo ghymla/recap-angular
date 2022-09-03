@@ -1,0 +1,46 @@
+<div class="m-3">
+  <div>
+    <p>Exemples de toString()</p>
+    <pre>
+      <span class="maVar">maVar</span> = 58
+      <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.toString()</span>
+      console.log(typeof<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> "string"</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-2">
+    <pre>
+      <span class="maVar">monArray</span> = ['string', 4, 'une blague', 'inspiration']
+      <span class="maVar">sortie </span> = <span class="maVar">monArray</span ><span class="method">.toString()</span>
+      console.log(typeof<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> "string"</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-3">
+    <h6>try it !!</h6>
+    <div class="try">
+      <input
+        class="input"
+        placeholder="Votre string !"
+        #typeString
+        (keyup.enter)="tryToString(typeString.value)"
+      >
+
+
+      <div *ngIf="convertString" class="m-2">
+      <p class="output"> Voici le résultat : String -> {{convertString}} | type: {{typeConvertString}}</p>
+      <p class="output"> Voici le résultat : Array  -> {{arrayToString}} | type: {{typeMyArray}}</p>
+      </div>
+
+      <div *ngIf="!convertString" class="m-2">
+      <p> Esayer par vous même ...</p>
+      </div>
+    </div>
+  </div>
+</div>
