@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class FromComponent implements OnInit {
-
-  constructor() { }
+  convertoArray: string[] | undefined;
+  typeArray: any;
 
   ngOnInit(): void {
   }
 
+  tryFrom(toArray: string){
+    this.convertoArray = Array.from(toArray);
+    this.typeArray = typeof this.convertoArray;
+  }
 }

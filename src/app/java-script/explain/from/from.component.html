@@ -1,1 +1,36 @@
-<p>from works!</p>
+<div class="m-3">
+  <div>
+    <p>Exemples de from</p>
+    <pre>
+      const <span class="maVar">maVar</span> = "je suis une string"
+      const <span class="maVar">sortie </span> = <span class="method">Array.from(</span><span class="maVar">maVar</span ><span class="method">)</span>
+      console.log(typeof<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> "objet" (un Array est un objet en JS)</span>
+      console.log(<span class="maVar"> sortie </span>)
+      <span class="outPut">// outPut -> j,e, ,s,u,i,s, ,u,n,e, ,s,t,r,i,n,g</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+  <div class="mt-3">
+    <h6>try it !!</h6>
+    <div class="try">
+      <input
+        class="input"
+        placeholder="Votre string !"
+        #stringToArray
+        (keyup)="tryFrom(stringToArray.value)"
+      >
+
+
+      <div *ngIf="convertoArray" class="m-2">
+      <p class="output"> Voici le résultat : {{convertoArray}} | type : {{typeArray}}</p>
+      </div>
+
+      <div *ngIf="!convertoArray" class="m-2">
+      <p> Esayer par vous même ...</p>
+      </div>
+    </div>
+  </div>
+</div>
