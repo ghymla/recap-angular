@@ -1,31 +1,25 @@
+
 <div class="m-3">
-  <div>
+
+  <div class="d-flex justify-content-between titleExp">
     <p>Exemples de split()</p>
-    <pre>
-      const <span class="maVar">maVar</span> = "pomme orange fraise"
-      const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.split(</span>' '<span class="method">)</span>
-      console.log(<span class="maVar"> sortie </span>)
-      <span class="outPut">// outPut -> pomme, orange, fraise  | type: objet</span>
-    </pre>
+    <fa-icon *ngIf="!dispNonS" [icon]="['fas', 'angle-up']" (click)="displayExpSplit()"></fa-icon>
+    <fa-icon *ngIf="dispNonS" [icon]="['fas', 'angle-down']" (click)="displayExpSplit()"></fa-icon>
   </div>
 
-  <div class="separation"></div>
-
-  <div class="mt-2">
-    <p>Exemples de join()</p>
-    <pre>
-      const <span class="maVar">maVar</span> = ["pomme", "orange", "fraise"]
-      const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.join(</span>' '<span class="method">)</span>
-      console.log(<span class="maVar"> sortie </span>)
-      <span class="outPut">// outPut -> pomme orange fraise | type: string</span>
-    </pre>
-  </div>
-
-  <div class="separation"></div>
-
-  <div class="mt-3">
+  <div id="expSplit">
     <div>
-      <h6>try split()</h6>
+      <pre>
+        const <span class="maVar">maVar</span> = "pomme orange fraise"
+        const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.split(</span>' '<span class="method">)</span>
+        console.log(<span class="maVar"> sortie </span>)
+        <span class="outPut">// outPut -> pomme, orange, fraise  | type: objet</span>
+      </pre>
+    </div>
+
+    <div class="separation"></div>
+
+    <div class="mt-3">
       <div class="try">
         <input
           class="input"
@@ -50,45 +44,67 @@
           </div>
       </div>
     </div>
+  </div>
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de join()</p>
+    <fa-icon *ngIf="!dispNonJ" [icon]="['fas', 'angle-up']" (click)="displayExpJoin()"></fa-icon>
+    <fa-icon *ngIf="dispNonJ" [icon]="['fas', 'angle-down']" (click)="displayExpJoin()"></fa-icon>
+  </div>
+
+  <div id="expJoin">
+    <div class="mt-2">
+      <pre>
+        const <span class="maVar">maVar</span> = ["pomme", "orange", "fraise"]
+        const <span class="maVar">sortie </span> = <span class="maVar">maVar</span ><span class="method">.join(</span>' '<span class="method">)</span>
+        console.log(<span class="maVar"> sortie </span>)
+        <span class="outPut">// outPut -> pomme orange fraise | type: string</span>
+      </pre>
+    </div>
 
     <div class="separation"></div>
 
-    <div>
-      <h6>try join()</h6>
-      <div class="try">
+    <div class="mt-3">
 
-        <input
-        class="input"
-        placeholder="Votre Array !"
-        #element
-        (keyup.enter)="creatArray(element.value)"
-        >
+      <div class="separation"></div>
 
-        <input
+      <div>
+        <h6>try join()</h6>
+        <div class="try">
+
+          <input
           class="input"
-          placeholder="Votre jonction !"
-          type="text"
-          #sep
-          (keyup.enter)="tryJoin(sep.value)"
-        >
+          placeholder="Votre Array !"
+          #element
+          (keyup.enter)="creatArray(element.value)"
+          >
 
-        <div *ngIf="resultToJoin" class="m-2">
-          <p class="output"> Voici le résultat : {{resultToJoin}}</p>
-        </div>
+          <input
+            class="input"
+            placeholder="Votre jonction !"
+            type="text"
+            #sep
+            (keyup.enter)="tryJoin(sep.value)"
+          >
 
-        <div *ngIf="!resultToJoin" class="m-2">
-          <p> Esayer par vous même ...</p>
-        </div>
-        <div *ngIf="userArray" class="m-2">
-          <p class="output"> Voici votre Array : {{displayArray}}</p>
-        </div>
+          <div *ngIf="resultToJoin" class="m-2">
+            <p class="output"> Voici le résultat : {{resultToJoin}}</p>
+          </div>
 
-        <div *ngIf="!userArray" class="m-2">
-          <p> créé un array (un élément par un élément) ...</p>
+          <div *ngIf="!resultToJoin" class="m-2">
+            <p> Esayer par vous même ...</p>
+          </div>
+          <div *ngIf="userArray" class="m-2">
+            <p class="output"> Voici votre Array : {{displayArray}}</p>
+          </div>
+
+          <div *ngIf="!userArray" class="m-2">
+            <p> créé un array (un élément par un élément) ...</p>
+          </div>
+
         </div>
 
       </div>
-
     </div>
   </div>
 </div>

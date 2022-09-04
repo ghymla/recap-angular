@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LengthComponent implements OnInit {
   nbCaract: number | undefined;
-
-  constructor() { }
+  dispNon: boolean = false;
 
   ngOnInit(): void {
   }
@@ -17,5 +16,16 @@ export class LengthComponent implements OnInit {
 
   tryLength(calcul: any) {
     this.nbCaract = calcul.length;
+  }
+
+  displayExpLength(){
+    let div: HTMLElement | null = document.getElementById("expLength");
+    if (div?.style.display != "none") {
+      div ? div.style.display = "none": console.log("error");
+      this.dispNon = true;
+    } else {
+      div.style.display = "block";
+      this.dispNon = false;
+    }
   }
 }

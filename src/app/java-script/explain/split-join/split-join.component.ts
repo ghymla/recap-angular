@@ -11,6 +11,8 @@ export class SplitJoinComponent implements OnInit {
   resultToJoin: any;
   userArray: string[] | undefined = [];
   displayArray: string | undefined;
+  dispNonS: boolean = false;
+  dispNonJ: boolean = false;
 
   ngOnInit(): void {
   }
@@ -26,5 +28,27 @@ export class SplitJoinComponent implements OnInit {
 
   tryJoin(jonc: string) {
     this.resultToJoin = this.userArray?.join(jonc);
+  }
+
+  displayExpSplit(){
+    let div: HTMLElement | null = document.getElementById("expSplit");
+    if (div?.style.display != "none") {
+      div ? div.style.display = "none": console.log("error");
+      this.dispNonS = true;
+    } else {
+      div.style.display = "block";
+      this.dispNonS = false;
+    }
+  }
+
+  displayExpJoin(){
+    let div: HTMLElement | null = document.getElementById("expJoin");
+    if (div?.style.display != "none") {
+      div ? div.style.display = "none": console.log("error");
+      this.dispNonJ = true;
+    } else {
+      div.style.display = "block";
+      this.dispNonJ = false;
+    }
   }
 }
