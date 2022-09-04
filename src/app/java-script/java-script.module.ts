@@ -8,6 +8,10 @@ import { NumberComponent } from './explain/number/number.component';
 import { ToStringComponent } from './explain/to-string/to-string.component';
 import { FromComponent } from './explain/from/from.component';
 import { SplitJoinComponent } from './explain/split-join/split-join.component';
+import { PushPopComponent } from './explain/push-pop/push-pop/push-pop.component';
+import { PushComponent } from './explain/push-pop/push/push.component';
+import { PopComponent } from './explain/push-pop/pop/pop.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -20,10 +24,14 @@ import { SplitJoinComponent } from './explain/split-join/split-join.component';
     NumberComponent,
     ToStringComponent,
     FromComponent,
-    SplitJoinComponent
+    SplitJoinComponent,
+    PushPopComponent,
+    PushComponent,
+    PopComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ]
 })
 export class JavaScriptModule { }

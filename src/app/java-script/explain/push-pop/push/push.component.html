@@ -1,0 +1,43 @@
+<div class="m-3">
+  <div>
+    <p>Exemples de push()</p>
+    <pre>
+      const <span class="maVar">monArray</span> = ["printemps", "été", "automne"]
+      <span class="maVar">monArray</span><span class="method">.push("hiver")</span>
+      console.log(<span class="maVar"> monArray </span>)
+      <span class="outPut">// outPut <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> [ 'printemps', 'été', 'automne', 'hiver' ]</span>
+    </pre>
+  </div>
+
+  <div class="separation"></div>
+
+
+  <div class="mt-3">
+    <h6>try it !!</h6>
+    <div class="try">
+      <input
+        class="input"
+        placeholder="Votre Array !"
+        #typeString
+        (keyup.enter)="createArray(typeString.value)"
+      >
+      <div *ngIf="!userArray" class="m-2">
+        <p> (format) -> élément1 élément2 élément3 ...</p>
+      </div>
+
+      <input
+        class="input"
+        placeholder="Votre rajout !"
+        #ajout
+        (keyup.enter)="addToArray(ajout.value)"
+      >
+      <div *ngIf="displayArray" class="m-2">
+      <p class="output"> Voici le résultat : Array  -> {{displayArray}} </p>
+      </div>
+
+      <div *ngIf="!displayArray" class="m-2">
+      <p> Esayer par vous même ...</p>
+      </div>
+    </div>
+  </div>
+</div>

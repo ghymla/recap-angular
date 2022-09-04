@@ -74,16 +74,16 @@ export const JSMETHODES: jsMethode [] = [
   {
     id: 10,
     categorie: "Array",
-    name: "push",
+    name: "push-pop",
     code: "monArray.push(argument(s))",
     explain: "Rajouter mon argument a mon Array"
   },
   {
     id: 11,
     categorie: "Array",
-    name: "pop",
+    name: "push-pop",
     code: "monArray.pop(argument(s))",
-    explain: "Supprimer l'argument de mon Array"
+    explain: "Supprimer le dernier argument de mon Array"
   },
   {
     id: 12,
