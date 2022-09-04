@@ -1,39 +1,47 @@
 <div class="m-3">
-  <div>
+
+  <div class="d-flex justify-content-between">
     <p>Exemples de pop()</p>
-    <pre>
-      const <span class="maVar">monArray</span> = ["printemps", "été", "automne", "hiver"]
-      <span class="maVar">monArray</span><span class="method">.pop()</span>
-      console.log(<span class="maVar"> monArray </span>)
-      <span class="outPut">// outPut <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> [ 'printemps', 'été', 'automne' ]</span>
-    </pre>
+    <fa-icon *ngIf="!dispNon" [icon]="['fas', 'angle-up']" (click)="displayExpPop()"></fa-icon>
+    <fa-icon *ngIf="dispNon" [icon]="['fas', 'angle-down']" (click)="displayExpPop()"></fa-icon>
   </div>
 
-  <div class="separation"></div>
+  <div id="expPop">
+    <div>
+      <pre>
+        const <span class="maVar">monArray</span> = ["printemps", "été", "automne", "hiver"]
+        <span class="maVar">monArray</span><span class="method">.pop()</span>
+        console.log(<span class="maVar"> monArray </span>)
+        <span class="outPut">// outPut <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> [ 'printemps', 'été', 'automne' ]</span>
+      </pre>
+    </div>
 
-  <div class="mt-3">
-    <h6>try it !!</h6>
-    <div class="try">
-      <input
-        class="input"
-        placeholder="Votre Array !"
-        #typeString
-        (keyup.enter)="createArray(typeString.value)"
-      >
-      <div *ngIf="!userArray" class="m-2">
-        <p> (format) -> élément1 élément2 élément3 ...</p>
-      </div>
+    <div class="separation"></div>
 
-      <div *ngIf="displayFullArray" class="m-2">
-        <p class="output"> Voici votre Array : {{displayFullArray}} </p>
-      </div>
+    <div class="mt-3">
+      <h6>try it !!</h6>
+      <div class="try">
+        <input
+          class="input"
+          placeholder="Votre Array !"
+          #typeString
+          (keyup.enter)="createArray(typeString.value)"
+        >
+        <div *ngIf="!userArray" class="m-2">
+          <p> (format) -> élément1 élément2 élément3 ...</p>
+        </div>
 
-      <div *ngIf="popArray" class="m-2">
-        <p class="output"> Apres la méthod pop() : {{popArray}} </p>
-      </div>
+        <div *ngIf="displayFullArray" class="m-2">
+          <p class="output"> Voici votre Array : {{displayFullArray}} </p>
+        </div>
 
-      <div *ngIf="!displayFullArray" class="m-2">
-      <p> Esayer par vous même ...</p>
+        <div *ngIf="popArray" class="m-2">
+          <p class="output"> Apres la méthod pop() : {{popArray}} </p>
+        </div>
+
+        <div *ngIf="!displayFullArray" class="m-2">
+        <p> Esayer par vous même ...</p>
+        </div>
       </div>
     </div>
   </div>
