@@ -8,6 +8,7 @@ import { CSSPROPS } from "./css/cssProps";
 import { JAVASCRIPTTITRES } from "./java-script/javaScriptTitres";
 import { JSCONTENTS } from "./java-script/JSContents";
 import { JSMETHODES } from "./java-script/JSMethodes";
+import { JAVATITRES } from "./java/javaTitres";
 
 @Injectable({
   providedIn: 'root'
@@ -21,8 +22,9 @@ export class InMemoryDataService implements InMemoryDbService {
     const cssTitres = CSSTITRES;
     const cssProps = CSSPROPS;
     const javaScriptTitres = JAVASCRIPTTITRES;
-    const jsContents = JSCONTENTS
-    const jsmethods = JSMETHODES
+    const jsContents = JSCONTENTS;
+    const jsmethods = JSMETHODES;
+    const javaTitres = JAVATITRES
     return {
       langages,
       htmlTitres,
@@ -31,7 +33,8 @@ export class InMemoryDataService implements InMemoryDbService {
       cssProps,
       javaScriptTitres,
       jsContents,
-      jsmethods
+      jsmethods,
+      javaTitres
     };
   }
 }

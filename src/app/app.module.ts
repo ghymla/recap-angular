@@ -12,6 +12,7 @@ import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
 import { HtmlModule } from './html/html.module';
 import { CssModule } from './css/css.module';
 import { JavaScriptModule } from './java-script/java-script.module';
+import { JavaModule } from "./java/java.module";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { JavaScriptModule } from './java-script/java-script.module';
     NavLangagesModule,
     HtmlModule,
     CssModule,
-    JavaScriptModule
+    JavaScriptModule,
+    JavaModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]
