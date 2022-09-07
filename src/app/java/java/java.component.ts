@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LangageService } from "../../nav-langages/langage.service";
+import { JavaService } from "../java.service";
 import { javaTitre } from "../javaTitre";
+import { ContentJava } from "../contentJava";
 
 @Component({
   selector: 'app-java',
@@ -9,18 +11,27 @@ import { javaTitre } from "../javaTitre";
 })
 export class JavaComponent implements OnInit {
   titres: javaTitre[] | undefined;
+  contents: ContentJava[] | undefined;
 
   constructor(
-    private languageService: LangageService
+    private languageService: LangageService,
+    private javaService: JavaService
   ) { }
 
   ngOnInit(): void {
     this.getTitre()
+    this.getContent()
   }
 
   getTitre() {
     this.languageService.getTitre("java").subscribe(
       titles => this.titres = titles
+    )
+  }
+
+  getContent() {
+    this.javaService.getContent().subscribe(
+      contents => this.contents = contents
     )
   }
 }

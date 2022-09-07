@@ -9,6 +9,7 @@ import { JAVASCRIPTTITRES } from "./java-script/javaScriptTitres";
 import { JSCONTENTS } from "./java-script/JSContents";
 import { JSMETHODES } from "./java-script/JSMethodes";
 import { JAVATITRES } from "./java/javaTitres";
+import { JAVACONTENTS } from "./java/contentJavas";
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +25,8 @@ export class InMemoryDataService implements InMemoryDbService {
     const javaScriptTitres = JAVASCRIPTTITRES;
     const jsContents = JSCONTENTS;
     const jsmethods = JSMETHODES;
-    const javaTitres = JAVATITRES
+    const javaTitres = JAVATITRES;
+    const javaContents = JAVACONTENTS
     return {
       langages,
       htmlTitres,
@@ -34,7 +36,8 @@ export class InMemoryDataService implements InMemoryDbService {
       javaScriptTitres,
       jsContents,
       jsmethods,
-      javaTitres
+      javaTitres,
+      javaContents
     };
   }
 }
