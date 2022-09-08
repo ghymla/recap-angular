@@ -23,11 +23,26 @@ export const JAVATITRES: javaTitre[] = [
   },
   {
     id: 5,
+    titre: "Arrays",
+    ancre: "array"
+  },
+  {
+    id: 6,
+    titre: "Lists",
+    ancre: "list"
+  },
+  {
+    id: 6,
+    titre: "Hash",
+    ancre: "hash"
+  },
+  {
+    id: 8,
     titre: "Class",
     ancre: "class"
   },
   {
-    id: 6,
+    id: 9,
     titre: "Quelques méthodes",
     ancre: "methodes"
   }

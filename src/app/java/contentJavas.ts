@@ -106,6 +106,111 @@ export const JAVACONTENTS: ContentJava[] = [
   },
   {
     id: 9,
+    titre: "Arrays",
+    chapitre: "Déclaration",
+    content: `
+              type[] monArray = new type[nb d'éléments];
+              Integer[] monArray = new Integer[5];
+              Integer[] monArray = new Integer[]{1,2,3,4,5};
+              `
+  },
+  {
+    id: 10,
+    titre: "Arrays",
+    chapitre: "changement/lecture de valeur",
+    content: `
+              monArray[index] = newValeur;
+              System.out.println(monArray[index]); // -> valeur
+              `
+  },
+  {
+    id: 11,
+    titre: "Arrays",
+    chapitre: "Multidimentionnels",
+    content: `
+              Type[][] myArray = new type[nb d'éléments][nb d'éléments];
+              String[][] myArray = new String[10][5];
+              myArray[2][4] = "newValeur"; (ou lecture)
+              `
+  },
+  {
+    id: 12,
+    titre: "Lists",
+    chapitre: "Déclaration",
+    content: `
+              Type<paramètre de type> myList = new ArrayList<paramètre de type>();
+              List<String> myList = new ArrayList<String>();
+              `
+  },
+  {
+    id: 13,
+    titre: "Lists",
+    chapitre: "Paramètre de type",
+    content: `
+              une List/Hash ne stoque QUE des Objets:
+              -> String
+              -> Integer
+              -> Double
+              -> Boolean
+              -> Float
+              `
+  },
+  {
+    id: 14,
+    titre: "Lists",
+    chapitre: "Méthodes de base",
+    content: `
+              -> .add(élément)        // ajoute l'élément a sa list
+              -> .set(index, élement) // remplace l'élément de l'index
+              -> .remove(index)       // supprime
+              -> .size()              // connaitre le nombre d'éléments
+              `
+  },
+  {
+    id: 15,
+    titre: "Lists",
+    chapitre: "list non ordonnée",
+    content: `
+              Set<String> mySet = new HashSet<String>();
+              `
+  },
+  {
+    id: 16,
+    titre: "Hashs",
+    chapitre: "Déclaration",
+    content: `
+              Map<type cléf, type valeur> maMap = new HashMap<type cléf, type valeur>();
+              Map<String, Integer> maMap = new HashMap<String, Integer>();
+              `
+  },
+  {
+    id: 17,
+    titre: "Hashs",
+    chapitre: "itération",
+    content: `
+              for (Map.Entry<type cléf, type valeur> entry : maMap.entrySet()){
+                // on itére sur entry qui est un élément clef + valeur.
+              }
+
+              utilisation de méthod:
+              -> .getKey()    // voir la cléf
+              -> .getValue()  // voir la valeur
+              `
+  },
+  {
+    id: 18,
+    titre: "Hashs",
+    chapitre: "Méthodes",
+    content: `
+              utilisation de méthod:
+              -> monHash.get(maClef)        // voir la valeur ou modifier
+              -> monHash.put(clef, valeur)  // ajouter un élément
+              -> monHash.remove(clef)
+              -> .size()
+              `
+  },
+  {
+    id: 19,
     titre: "Fonctions",
     chapitre: "Déclaration d'une fonction",
     content: `
@@ -119,7 +224,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 10,
+    id: 20,
     titre: "Fonctions",
     chapitre: "Modificateurs d'accès",
     content: `
@@ -129,7 +234,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 11,
+    id: 21,
     titre: "Class",
     chapitre: "Déclaration d'une class",
     content: `
@@ -142,7 +247,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 12,
+    id: 22,
     titre: "Class",
     chapitre: "Modificateurs d'état",
     content: `
@@ -152,6 +257,66 @@ export const JAVACONTENTS: ContentJava[] = [
               native,
               strictfp,
               volatile
+              `
+  },
+  {
+    id: 23,
+    titre: "Class",
+    chapitre: "Constructeur",
+    content: `
+              class MaClass {
+                attribut(s);
+
+                MaClass(argument(s)){
+                  this.attribut(s) = argument(s);
+                  instruction(s);
+                }
+              }
+              `
+  },
+  {
+    id: 24,
+    titre: "Class",
+    chapitre: "Héritage",
+    content: `
+              class Mère {
+                private attribut(s);
+
+                Mère(argument(s)){
+                  this.attribut(s) = argument(s);
+                }
+              }
+
+              class Enfant extends Mère {
+                attribut(s);
+
+                Enfant(argument(s)){
+                  super(attribut(s)Mère);
+                  this.attribut(s) = argument(s);
+                }
+              }
+              `
+  },
+  {
+    id: 24,
+    titre: "Class",
+    chapitre: "Polymorphisme",
+    content: `
+              class Mère {
+                void maMéthod{
+                  instruction(s);
+                }
+              }
+
+              class Enfant extends Mère {
+
+                @Override           // convention de lisibilité
+                void maMéthod{
+                // le même nom de méthod que celle de la classe mère
+                  super.maMéthod(); // celle de la class  mère
+                  instruction(s);
+                }
+              }
               `
   }
 ]
