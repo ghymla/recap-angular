@@ -32,8 +32,8 @@ export const JAVATITRES: javaTitre[] = [
     ancre: "list"
   },
   {
-    id: 6,
-    titre: "Hash",
+    id: 7,
+    titre: "Hashs",
     ancre: "hash"
   },
   {
