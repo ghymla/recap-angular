@@ -235,6 +235,27 @@ export const JAVACONTENTS: ContentJava[] = [
   },
   {
     id: 21,
+    titre: "Fonctions",
+    chapitre: "Fonction récursive",
+    content: `
+              mafonction(param1, param2):
+                si condition
+                  retourner calcul
+                sinon
+                  mafonction(param1, param2)
+                  retourner quelque-chose
+
+              public static int recursiveFunction(int x){
+                if (x <= 1){
+                  return 1;
+                }else{
+                  return recursiveFunction(x - 1);
+                }
+              }
+              `
+  },
+  {
+    id: 22,
     titre: "Class",
     chapitre: "Déclaration d'une class",
     content: `
@@ -247,7 +268,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 22,
+    id: 23,
     titre: "Class",
     chapitre: "Modificateurs d'état",
     content: `
@@ -260,7 +281,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 23,
+    id: 24,
     titre: "Class",
     chapitre: "Constructeur",
     content: `
@@ -275,7 +296,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 24,
+    id: 25,
     titre: "Class",
     chapitre: "Héritage",
     content: `
@@ -298,7 +319,7 @@ export const JAVACONTENTS: ContentJava[] = [
               `
   },
   {
-    id: 24,
+    id: 26,
     titre: "Class",
     chapitre: "Polymorphisme",
     content: `

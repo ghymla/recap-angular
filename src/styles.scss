@@ -14,6 +14,7 @@ a {
 }
 
 body {
+  display: flex;
   background-color: rgb(32, 33, 36) !important;
   height: 100%;
   width: 86.5%;
@@ -31,6 +32,7 @@ body {
   width: 200px;
   height: 100%;
   background-color:  rgb(32 33 36);
+  z-index: 3;
   &::-webkit-scrollbar{
     width: 10px;
     background-color: #162246;
@@ -40,9 +42,7 @@ body {
 
 .pos{
   position: relative;
-  left: 205px;
-  top: 0px;
-  z-index: 2;
+  left: 0;
   justify-content: flex-start;
   align-items: flex-start;
 }
