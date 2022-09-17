@@ -20,27 +20,27 @@ export const LANGAGES: Langage [] = [
     route: "javaScript"
   },
   {
-    id: 4,
-    name: "angular",
-    logo: "../../assets/logo/logo-angular.png",
-    route: "angular"
-  },
-  {
     id: 5,
     name: "java",
     logo: "../../assets/logo/logo-java.svg.png",
     route: "java"
-  },
-  {
-    id: 6,
-    name: "python",
-    logo: "../../assets/logo/logo-python.svg.png",
-    route: "python"
-  },
-  {
-    id: 7,
-    name: "ruby",
-    logo: "../../assets/logo/logo-ruby.svg.png",
-    route: "ruby"
   }
+  // {
+  //   id: 4,
+  //   name: "angular",
+  //   logo: "../../assets/logo/logo-angular.png",
+  //   route: "angular"
+  // },
+  // {
+  //   id: 6,
+  //   name: "python",
+  //   logo: "../../assets/logo/logo-python.svg.png",
+  //   route: "python"
+  // },
+  // {
+  //   id: 7,
+  //   name: "ruby",
+  //   logo: "../../assets/logo/logo-ruby.svg.png",
+  //   route: "ruby"
+  // }
 ]

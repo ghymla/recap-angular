@@ -4,10 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-page-no-found',
   template: `
     <div class="pos">
-    <p>
-      page-no-found works!
-    </p>
-    <hr>
+      <img src="../../assets/img/tortue-imbriquee.jpg" alt=" tortue imbriquée" width="100%" height="100%">
     </div>
   `,
   styles: [
