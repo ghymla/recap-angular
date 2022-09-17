@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 html::-webkit-scrollbar{
 	width: 10px;
-	background-color: #162246;
+  height: 10px;
+	background-color: #3f3f3fb5;
 	border: 1px solid black;
+}
+
+html::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #b46d6da8;
 }
 
 pre {
@@ -35,8 +41,13 @@ body {
   z-index: 3;
   &::-webkit-scrollbar{
     width: 10px;
-    background-color: #162246;
+    height: 10px;
+    background-color: #3f3f3fb5;
     border: 1px solid black;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #b46d6da8;
   }
 }
 
@@ -116,4 +127,17 @@ body {
 
 .try {
   margin-left: 43px;
+}
+
+.exp:hover {
+
+  cursor: help;
+  border-radius: 5px;
+  width: 25%;
+  background-color: rgba(60, 60, 60, 0.5);
+
+}
+
+.break {
+  color: red;
 }

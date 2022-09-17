@@ -12,6 +12,7 @@ import { ContentJava } from "../contentJava";
 export class JavaComponent implements OnInit {
   titres: javaTitre[] | undefined;
   contents: ContentJava[] | undefined;
+  displayChapitre: string | undefined;
 
   constructor(
     private languageService: LangageService,
@@ -33,5 +34,9 @@ export class JavaComponent implements OnInit {
     this.javaService.getContent().subscribe(
       contents => this.contents = contents
     )
+  }
+
+  displayExplain(chapitre: string) {
+    this.displayChapitre = chapitre;
   }
 }

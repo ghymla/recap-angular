@@ -1,1 +1,54 @@
-<p>basique works!</p>
+
+<div class="m-1">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de condition if/else</p>
+    <fa-icon *ngIf="!dispCondi" [icon]="['fas', 'angle-up']" (click)="displayExpCondi()"></fa-icon>
+    <fa-icon *ngIf="dispCondi" [icon]="['fas', 'angle-down']" (click)="displayExpCondi()"></fa-icon>
+  </div>
+
+  <div id="expCondi">
+    <div>
+      <pre>
+        import java.util.Scanner;
+
+        public class conditions {{ '{' }}
+            public static void main(String[] args) {{ '{' }}
+
+              <span class="method">System.out.println(</span>"Quel est votre âge ??: "<span class="method">)</span>;
+                Scanner saisieUtilisateur = new Scanner(System.in);
+                int <span class="maVar">individu</span> = saisieUtilisateur.nextInt();
+
+                if (<span class="maVar">individu</span> &lt; 16) {{ '{' }}
+                  <span class="method">System.out.println(</span>"Trop jeune pour conduire"<span class="method">)</span>;
+                {{ '}' }} else if (<span class="maVar">individu</span> &gt; 15 && individu &lt; 18 ) {{ '}' }}
+                  <span class="method">System.out.println(</span>"La conduite accompagnée est conseiller"<span class="method">)</span>;
+                {{ '}' }} else {{ '{' }}
+                  <span class="method">System.out.println(</span>"Enfin la liberté de la voiture !!"<span class="method">)</span>;
+                {{ '}' }}
+            {{ '}' }}
+        {{ '}' }}
+      </pre>
+    </div>
+
+    <div class="separation"></div>
+
+    <div class="mt-3">
+      <div class="try">
+        <input
+          class="input"
+          placeholder="Votre âge !"
+          #age
+          (keyup.enter)="legalAgeDrive(age.value)"
+        >
+      </div>
+    </div>
+    <div *ngIf="ageLegalDriver">
+      <p class="ms-5">{{ ageLegalDriver }}</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="separation"></div>

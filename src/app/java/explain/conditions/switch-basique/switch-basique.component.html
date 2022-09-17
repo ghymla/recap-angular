@@ -1,1 +1,55 @@
-<p>switch-basique works!</p>
+
+<div class="m-1">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de condition Switch</p>
+    <fa-icon *ngIf="!dispSwitch" [icon]="['fas', 'angle-up']" (click)="displayExpSwitch()"></fa-icon>
+    <fa-icon *ngIf="dispSwitch" [icon]="['fas', 'angle-down']" (click)="displayExpSwitch()"></fa-icon>
+  </div>
+
+  <div id="expSwitch">
+    <div>
+      <pre>
+        public class SwitchName {{ '{' }}
+          public static void  main(String[] args) {{ '{' }}
+              String <span class="maVar">mobility</span> = "velo";
+
+              switch(<span class="maVar">mobility</span>) {{ '{' }}
+                  case "voiture":
+                      <span class="method">System.out.println(</span>"Balade en voiture ! "<span class="method">)</span>;
+                      <span class = "break">break</span>;
+                  case "velo":
+                      <span class="method">System.out.println(</span>"Balade a velo ! "<span class="method">)</span>;
+                      <span class = "break">break</span>;
+                  case "bateau":
+                      <span class="method">System.out.println(</span>"Balade en bateau ! "<span class="method">)</span>;
+                      <span class = "break">break</span>;
+                  default:
+                  <span class="method">System.out.println(</span>"ceci n'est pas un moyen de transport viable !! "<span class="method">)</span>;
+              {{ '}' }}
+          {{ '}' }}
+      {{ '}' }}
+      </pre>
+    </div>
+
+    <div class="separation"></div>
+
+    <!-- <div class="mt-3">
+      <div class="try">
+        <input
+          class="input"
+          placeholder="Votre âge !"
+          #age
+          (keyup.enter)="legalAgeDrive(age.value)"
+        >
+      </div>
+    </div>
+    <div *ngIf="ageLegalDriver">
+      <p class="ms-5">{{ ageLegalDriver }}</p>
+    </div>
+
+  </div> -->
+
+</div>
+
+<div class="separation"></div>

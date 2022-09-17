@@ -7,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class SwitchBasiqueComponent implements OnInit {
+  dispSwitch: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  displayExpSwitch(){
+    let div: HTMLElement | null = document.getElementById("expSwitch");
+    if (div?.style.display != "none") {
+      div ? div.style.display = "none": console.log("error");
+      this.dispSwitch = true;
+    } else {
+      div.style.display = "block";
+      this.dispSwitch = false;
+    }
   }
 
 }
