@@ -10,6 +10,7 @@ import { JSCONTENTS } from "./java-script/JSContents";
 import { JSMETHODES } from "./java-script/JSMethodes";
 import { JAVATITRES } from "./java/javaTitres";
 import { JAVACONTENTS } from "./java/contentJavas";
+import { COMMANDESGIT } from "./git/commandesGit";
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,8 @@ export class InMemoryDataService implements InMemoryDbService {
     const jsContents = JSCONTENTS;
     const jsmethods = JSMETHODES;
     const javaTitres = JAVATITRES;
-    const javaContents = JAVACONTENTS
+    const javaContents = JAVACONTENTS;
+    const commandesGit = COMMANDESGIT
     return {
       langages,
       htmlTitres,
@@ -37,7 +39,8 @@ export class InMemoryDataService implements InMemoryDbService {
       jsContents,
       jsmethods,
       javaTitres,
-      javaContents
+      javaContents,
+      commandesGit
     };
   }
 }

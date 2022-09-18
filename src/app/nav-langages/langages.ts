@@ -1,6 +1,7 @@
 import { Langage } from "./langage";
 
 export const LANGAGES: Langage [] = [
+  // ATTENTION name est injecter dans l'url donc si changement, les routes seront impacter
   {
     id : 1,
     name : "html",
@@ -24,6 +25,12 @@ export const LANGAGES: Langage [] = [
     name: "java",
     logo: "../../assets/logo/logo-java.svg.png",
     route: "java"
+  },
+  {
+    id: 8,
+    name: "git",
+    logo: "../../assets/logo/logo-git.png",
+    route: "git"
   }
   // {
   //   id: 4,

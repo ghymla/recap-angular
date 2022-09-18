@@ -13,6 +13,9 @@ import { HtmlModule } from './html/html.module';
 import { CssModule } from './css/css.module';
 import { JavaScriptModule } from './java-script/java-script.module';
 import { JavaModule } from "./java/java.module";
+import { GitModule } from "./git/git.module";
+
+
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { JavaModule } from "./java/java.module";
     HtmlModule,
     CssModule,
     JavaScriptModule,
-    JavaModule
+    JavaModule,
+    GitModule
   ],
   providers: [],
   bootstrap: [AppComponent, BarNavLangageComponent]

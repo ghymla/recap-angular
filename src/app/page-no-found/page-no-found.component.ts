@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-page-no-found',
   template: `
     <div class="pos">
-      <img src="../../assets/img/wall-E.png" alt="Wall E" width="56%" height="56%" class="img-perdu">
+      <img src="../../assets/img/wall-E.png" alt="Wall E" width="70%" height="70%" class="img-perdu">
     </div>
   `,
   styles: [
