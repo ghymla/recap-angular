@@ -20,6 +20,12 @@ export const COMMANDESGIT: CommandeGit[] = [
     explain: "Créé un dépot git"
   },
   {
+    id: 21,
+    name: "initialiser",
+    cmd: "git clone url",
+    explain: "récupérer un dépot git distant"
+  },
+  {
     id: 4,
     name: "status",
     cmd: "git status (gst)",
@@ -74,6 +80,12 @@ export const COMMANDESGIT: CommandeGit[] = [
     explain: "Changer de branche (version 2.23)"
   },
   {
+    id: 23,
+    name: "branches",
+    cmd: "git fetch",
+    explain: "Met le répôt a jours"
+  },
+  {
     id: 13,
     name: "commit",
     cmd: "git add . (ga .)",
@@ -104,6 +116,12 @@ export const COMMANDESGIT: CommandeGit[] = [
     explain: "Mettre à jour le dépôt local"
   },
   {
+    id: 22,
+    name: "commit",
+    cmd: "git pull --rebase",
+    explain: "Mettre à jour le dépôt local avec tous les dépôt existant"
+  },
+  {
     id: 18,
     name: "push",
     cmd: "git push (gp)",
@@ -120,6 +138,6 @@ export const COMMANDESGIT: CommandeGit[] = [
     name: "supprimer",
     cmd: "git rmg --cached nom_du_fichier",
     explain: "Supprimer un ficher de l'index"
-  },
+  }
 
 ]
