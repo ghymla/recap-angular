@@ -28,7 +28,7 @@ export const COMMANDESGIT: CommandeGit[] = [
   {
     id: 5,
     name: "branches",
-    cmd: "git branche -a (gb -a)",
+    cmd: "git branch -a (gb -a)",
     explain: "Lister les branches"
   },
   {
