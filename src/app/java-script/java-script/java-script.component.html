@@ -10,7 +10,7 @@
         <h6 class="mt-3 mb-4">{{ titre.titre }}</h6>
         <div *ngFor="let content of contents">
           <div *ngIf="content.titre === titre.titre">
-            <p class="ms-3"> {{ content.chapitre }}</p>
+            <p class="ms-3" (click)="displayExplain(content.chapitre)"> {{ content.chapitre }}</p>
             <pre class="ms-5 ps-2"> {{ content.content }}</pre>
           </div>
         </div>
@@ -57,6 +57,7 @@
       <app-from *ngIf="displayMethod == 'from'"></app-from>
       <app-split-join *ngIf="displayMethod == 'split-join'"></app-split-join>
       <app-push-pop *ngIf="displayMethod == 'push-pop'"></app-push-pop>
+      <app-boucle-for *ngIf="displayMethod == 'Boucle For'"></app-boucle-for>
     </div>
   </div>
 

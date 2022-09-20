@@ -1,0 +1,16 @@
+<div class="m-3">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de from</p>
+    <fa-icon *ngIf="!dispNon" [icon]="['fas', 'angle-up']" (click)="displayExpFor()"></fa-icon>
+    <fa-icon *ngIf="dispNon" [icon]="['fas', 'angle-down']" (click)="displayExpFor()"></fa-icon>
+  </div>
+
+  <div id="expFor">
+    <div>
+      <pre>
+        for (<span class="maVar">let</span> i=0; i &lt; 100; i++) {{ '{' }}
+          <span class="method">console.log(</span>i <span class="method">)</span>;
+        {{ '}' }}
+      </pre>
+    </div>

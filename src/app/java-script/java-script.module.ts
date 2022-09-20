@@ -12,6 +12,7 @@ import { PushPopComponent } from './explain/push-pop/push-pop/push-pop.component
 import { PushComponent } from './explain/push-pop/push/push.component';
 import { PopComponent } from './explain/push-pop/pop/pop.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BoucleForComponent } from './explain/boucle-for/boucle-for.component';
 
 
 
@@ -27,7 +28,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SplitJoinComponent,
     PushPopComponent,
     PushComponent,
-    PopComponent
+    PopComponent,
+    BoucleForComponent
   ],
   imports: [
     CommonModule,
