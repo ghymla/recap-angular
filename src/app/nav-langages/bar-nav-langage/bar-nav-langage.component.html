@@ -14,9 +14,9 @@
     <hr class="p-auto w-50 ligne">
 
     <!-- si on est dans le section du langage on montre les titres -->
-    <div class="d-flex">
-      <div *ngIf="page == langage.name" class="backTitlesA"></div>
-      <div *ngIf="page == langage.name">
+    <div *ngIf="page == langage.name" class="d-flex">
+      <div class="backTitlesA"></div>
+      <div>
         <div *ngFor="let titre of titres" class="titleAncres" >
           <a href="{{langage.name}}#{{titre.ancre}}" class="titleA">
             <p> {{titre.titre}}</p>
