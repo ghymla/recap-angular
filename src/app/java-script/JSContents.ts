@@ -29,7 +29,7 @@ export const JSCONTENTS: JSContent [] = [
     id: 5,
     titre: "Structure conditionnelles",
     chapitre: "Switch",
-    content: "switch (expression) {\n  case choix1:\n    instructions\n    breack;\n  case choix2:\n    instructions\n    breack;\n  case choix3:\n    instructions\n    breack;\n  default:\n    instructions\n }"
+    content: "switch (expression) {\n  case choix1:\n    instructions\n    break;\n  case choix2:\n    instructions\n    break;\n  case choix3:\n    instructions\n    break;\n  default:\n    instructions\n }"
   },
   {
     id: 6,
