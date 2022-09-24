@@ -1,0 +1,31 @@
+<div class="m-3">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de condition</p>
+    <fa-icon *ngIf="!dispNon" [icon]="['fas', 'angle-up']" (click)="displayExpSwitch()"></fa-icon>
+    <fa-icon *ngIf="dispNon" [icon]="['fas', 'angle-down']" (click)="displayExpSwitch()"></fa-icon>
+  </div>
+
+  <div id="expSwitch">
+    <div>
+      <pre>
+        let <span class="maVar">maVAr</span>= "case 3";
+
+        <span class="method">switch</span> (<span class="maVar">maVAr</span>) {{ '{' }}
+         <span class="method">case</span> "case 1":
+           console.log("vous avez selectionné la case 1");
+           <span class="break">break</span>;
+         <span class="method">case</span> "case 2":
+           console.log("vous avez selectionné la case 2");
+           <span class="break">break</span>;
+         <span class="method">case</span> "case 3":
+           console.log("vous avez selectionné la case 3");
+           <span class="break">break</span>;
+         <span class="method">default</span>:
+           console.log("le choix n'est pas correct");
+        {{ '}' }}
+
+      </pre>
+    </div>
+  </div>
+</div>

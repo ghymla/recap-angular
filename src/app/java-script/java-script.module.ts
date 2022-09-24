@@ -15,6 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BoucleForComponent } from './explain/boucle-for/boucle-for.component';
 import { CondiIfComponent } from './explain/condi-if/condi-if.component';
 import { CondiTernaireComponent } from './explain/condi-ternaire/condi-ternaire.component';
+import { SwitchComponent } from './explain/switch/switch.component';
+import { WhileComponent } from './explain/while/while.component';
 
 
 
@@ -33,7 +35,9 @@ import { CondiTernaireComponent } from './explain/condi-ternaire/condi-ternaire.
     PopComponent,
     BoucleForComponent,
     CondiIfComponent,
-    CondiTernaireComponent
+    CondiTernaireComponent,
+    SwitchComponent,
+    WhileComponent
   ],
   imports: [
     CommonModule,

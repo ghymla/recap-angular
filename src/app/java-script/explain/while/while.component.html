@@ -1,0 +1,50 @@
+<div class="m-3">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de condition</p>
+    <fa-icon *ngIf="!dispNon" [icon]="['fas', 'angle-up']" (click)="displayExpWile()"></fa-icon>
+    <fa-icon *ngIf="dispNon" [icon]="['fas', 'angle-down']" (click)="displayExpWile()"></fa-icon>
+  </div>
+
+  <div id="expWile">
+    <div>
+      <pre>
+        const readline = require('readline-sync');
+
+        <span class="outPut">// création d'un nombre aléatoire</span>
+        <span class="outPut">// Math.floor retourne l'int inférieur -> 5.95 retourn 5</span>
+        <span class="outPut">// Math.random créé un chiffre aléatoire entre 0 et 1</span>
+        let <span class="maVar">nbMystere</span> = Math.floor(Math.random() * 50)
+        let <span class="maVar">nbEssai</span> = readline.question("combien d'essais pour trouver le chiffre mystère ? : " );
+
+        <span class="method">while</span> (<span class="maVar">nbEssai</span> > 0) {{ '{' }}
+
+          let <span class="maVar">findNb</span> = readline.question("choisissez un nombre entre 0 et 50 : " );
+          let <span class="maVar">userNumber</span> = Number(findNb);
+
+          let <span class="maVar">win</span> = compareNumber(userNumber);
+
+          if (win == "Win") {{ '{' }}
+            <span class="break">break</span>;
+          {{ '}' }}
+          <span class="maVar">nbEssai</span> -= 1;
+        {{ '}' }}
+
+
+        function <span class="method">compareNumber</span>(number){{ '{' }}
+          <span class="method">if</span> (nbMystere > number) {{ '{' }}
+              console.log(`\nle chiffre mystère est supérieur a ${{ '{' }}number}\n`);
+            {{ '}' }} <span class="method">else if</span> (nbMystere < number) {{ '{' }}
+              console.log(`\nle chiffre mystère est inférieur a ${{ '{' }}number}\n`);
+            {{ '}' }} <span class="method">else if</span> (nbMystere == number) {{ '{' }}
+              console.log(`\nBien jouer !!! le chiffre mystère est bien ${{ '{' }}nbMystere}\n`);
+              return "Win";
+            {{ '}' }} <span class="method">else</span> {{ '{' }}
+              console.log("Avez vous taper un chiffre ??")
+            {{ '}' }}
+        {{ '}' }}
+
+      </pre>
+    </div>
+  </div>
+</div>
