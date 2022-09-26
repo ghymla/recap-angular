@@ -17,6 +17,7 @@ import { CondiIfComponent } from './explain/condi-if/condi-if.component';
 import { CondiTernaireComponent } from './explain/condi-ternaire/condi-ternaire.component';
 import { SwitchComponent } from './explain/switch/switch.component';
 import { WhileComponent } from './explain/while/while.component';
+import { DoWhileComponent } from './explain/do-while/do-while.component';
 
 
 
@@ -37,7 +38,8 @@ import { WhileComponent } from './explain/while/while.component';
     CondiIfComponent,
     CondiTernaireComponent,
     SwitchComponent,
-    WhileComponent
+    WhileComponent,
+    DoWhileComponent
   ],
   imports: [
     CommonModule,

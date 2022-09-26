@@ -5,6 +5,7 @@ import { JavaComponent } from './java/java.component';
 import { BasiqueComponent } from './explain/conditions/basique/basique.component';
 import { SwitchEnumComponent } from './explain/conditions/switch-enum/switch-enum.component';
 import { SwitchBasiqueComponent } from './explain/conditions/switch-basique/switch-basique.component';
+import { ForComponent } from './explain/for/for.component';
 
 
 
@@ -13,7 +14,8 @@ import { SwitchBasiqueComponent } from './explain/conditions/switch-basique/swit
     JavaComponent,
     BasiqueComponent,
     SwitchEnumComponent,
-    SwitchBasiqueComponent
+    SwitchBasiqueComponent,
+    ForComponent
   ],
   imports: [
     CommonModule,

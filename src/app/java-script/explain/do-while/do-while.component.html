@@ -1,0 +1,23 @@
+<div class="m-3">
+
+  <div class="d-flex justify-content-between titleExp">
+    <p>Exemples de condition</p>
+    <fa-icon *ngIf="!dispNon" [icon]="['fas', 'angle-up']" (click)="displayExpDoWile()"></fa-icon>
+    <fa-icon *ngIf="dispNon" [icon]="['fas', 'angle-down']" (click)="displayExpDoWile()"></fa-icon>
+  </div>
+
+  <div id="expDoWile">
+    <div>
+      <pre>
+        let <span class="maVar">x</span> = 0
+
+        <span class="method">do</span> {{'{'}}
+          console.log(<span class="maVar">x</span>);
+          <span class="maVar">x</span>++;
+        {{ '}' }} <span class="method">while</span> (<span class="maVar">x</span> &lt; 10);
+
+        <span class="outPut">// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</span>
+      </pre>
+    </div>
+  </div>
+</div>
